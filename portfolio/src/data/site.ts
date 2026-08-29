@@ -16,7 +16,7 @@ export const profile = {
   phone: "+506 6022-1640",
   email: "aazv.ale@gmail.com",
   github: "https://github.com/alejandroZumbado",
-  linkedin: null as string | null,
+  linkedin: "https://www.linkedin.com/in/alejandro-zumbado-4124661ab/",
   about:
     "Ingeniero en Computación (TEC, 2019) con más de 4 años construyendo productos de extremo a extremo: sitios y aplicaciones web, experiencias de realidad virtual, y videojuegos multijugador. Trabajo en Opal Interactive desarrollando proyectos de clientes (simuladores XR, apps de kiosco/AR, avatares con IA), y en paralelo diseño, desarrollo y publico mis propios productos — un pipeline de noticias con IA, videojuegos multijugador, y un paquete de networking para Unity — cubriendo todo el ciclo: diseño, código, despliegue y mantenimiento.",
 };

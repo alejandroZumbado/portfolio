@@ -1,7 +1,7 @@
 # Alejandro Zumbado Vargas
 ### Full Stack Developer
 
-Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado
+Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado | linkedin.com/in/alejandro-zumbado-4124661ab
 
 ## Summary
 Computer Engineer (TEC, 2019) with 4+ years building end-to-end web products: React/Next.js frontends, Django/Node.js backends, REST APIs, and LLM integrations. Currently at Opal Interactive, building projects for various clients (XR simulators, kiosk/AR apps, AI avatars). In parallel, I design and ship my own products — an AI-driven autonomous content pipeline (newspulse.dev) and published multiplayer WebGL games — owning design, development, deployment (CI/CD), and maintenance.

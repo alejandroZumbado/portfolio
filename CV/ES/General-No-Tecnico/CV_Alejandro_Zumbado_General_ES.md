@@ -1,7 +1,7 @@
 # Alejandro Zumbado Vargas
 ### Desarrollador de Software
 
-Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado
+Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado | linkedin.com/in/alejandro-zumbado-4124661ab
 
 ## Sobre mí
 Soy Ingeniero en Computación graduado del Tecnológico de Costa Rica, con más de 4 años construyendo sitios web, aplicaciones y videojuegos para empresas y proyectos propios. Actualmente trabajo en un estudio de desarrollo que recibe proyectos de distintas empresas, creando desde simuladores de entrenamiento hasta personajes virtuales con inteligencia artificial. Además, en mi tiempo propio, he creado un sitio de noticias que se actualiza solo todos los días y varios videojuegos que la gente puede jugar hoy en internet. Soy una persona que aprende rápido, se adapta a equipos y clientes distintos, y le gusta terminar lo que empieza.

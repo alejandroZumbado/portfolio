@@ -1,7 +1,7 @@
 # Alejandro Zumbado Vargas
 ### Desarrollador de Videojuegos & VR
 
-Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado
+Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado | linkedin.com/in/alejandro-zumbado-4124661ab
 
 ## Perfil
 Ingeniero en Computación (TEC, 2019) apasionado por el desarrollo de videojuegos desde competiciones de programación y diseño de juegos hasta productos publicados. Experiencia en Unity/C# (2D y 3D), networking multijugador (Netcode for GameObjects + Relay), XR para Meta Quest y XREAL, generación procedural de niveles y hasta desarrollo homebrew para Game Boy. Actualmente en Opal Interactive desarrollando simuladores XR y apps de kiosco/AR para clientes; en paralelo publico mis propios juegos y empaqueto mi propia capa de networking como producto independiente.

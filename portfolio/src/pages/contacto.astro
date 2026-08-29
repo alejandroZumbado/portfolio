@@ -6,6 +6,7 @@ const items = [
   { icon: "✉️", label: "Correo", value: profile.email, href: `mailto:${profile.email}` },
   { icon: "📞", label: "Teléfono", value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, "")}` },
   { icon: "💻", label: "GitHub", value: "alejandroZumbado", href: profile.github },
+  { icon: "🔗", label: "LinkedIn", value: "alejandro-zumbado", href: profile.linkedin },
   { icon: "📍", label: "Ubicación", value: profile.location, href: null },
 ];
 ---
@@ -24,7 +25,7 @@ const items = [
           <Tag
             href={it.href ?? undefined}
             target={it.href?.startsWith("http") ? "_blank" : undefined}
-            rel={it.href === profile.github ? "me noopener" : it.href?.startsWith("http") ? "noopener" : undefined}
+            rel={it.href === profile.github || it.href === profile.linkedin ? "me noopener" : it.href?.startsWith("http") ? "noopener" : undefined}
             class="flex items-center gap-4 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 transition-all hover:-translate-y-0.5 hover:border-[var(--accent)]"
             data-reveal
             style={`transition-delay:${i * 70}ms`}

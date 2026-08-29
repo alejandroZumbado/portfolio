@@ -31,7 +31,7 @@ const personJsonLd = {
     addressLocality: "Poás, Alajuela",
     addressCountry: "CR",
   },
-  sameAs: [profile.github],
+  sameAs: [profile.github, profile.linkedin].filter(Boolean),
   knowsAbout: ["Full Stack Development", "React", "Unity", "Game Development", "Virtual Reality", "Artificial Intelligence"],
 };
 
@@ -58,6 +58,7 @@ const websiteJsonLd = {
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="me" href={profile.github} />
+    <link rel="me" href={profile.linkedin} />
     <meta name="theme-color" content="#14120f" />
 
     <meta property="og:type" content="website" />

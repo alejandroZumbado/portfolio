@@ -1,7 +1,7 @@
 # Alejandro Zumbado Vargas
 ### Frontend Developer
 
-Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado
+Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado | linkedin.com/in/alejandro-zumbado-4124661ab
 
 ## Perfil
 Ingeniero en Computación (TEC, 2019) especializado en interfaces web con React y experiencias interactivas 3D/WebGL. Más de 4 años construyendo UI responsivas, componentes reutilizables y experiencias inmersivas (VR web, avatares interactivos en tiempo real). Actualmente en Opal Interactive, construyendo la interfaz de un avatar con IA y apps de kiosco/AR para clientes del estudio. Cuidadoso con el rendimiento y la consistencia visual entre navegadores y dispositivos.

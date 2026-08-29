@@ -1,7 +1,7 @@
 # Alejandro Zumbado Vargas
 ### Game & VR Developer
 
-Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado
+Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado | linkedin.com/in/alejandro-zumbado-4124661ab
 
 ## Summary
 Computer Engineer (TEC, 2019) passionate about game development, from competitive programming and game design competitions to shipped products. Experience with Unity/C# (2D and 3D), multiplayer networking (Netcode for GameObjects + Relay), XR for Meta Quest and XREAL, procedural level generation, and even Game Boy homebrew development. Currently at Opal Interactive building XR simulators and kiosk/AR apps for clients; in parallel I publish my own games and I'm packaging my own networking layer as a standalone product.
