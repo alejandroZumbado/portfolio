@@ -1,0 +1,142 @@
+{
+  "lang": "en",
+  "variantFolder": "General-Non-Technical",
+  "fileBase": "CV_Alejandro_Zumbado_General_EN",
+  "name": "Alejandro Zumbado Vargas",
+  "title": "Software Developer",
+  "location": "Poás, Alajuela, Costa Rica",
+  "phone": "+506 6022-1640",
+  "email": "aazv.ale@gmail.com",
+  "github": "github.com/alejandroZumbado",
+  "linkedin": null,
+  "labels": {
+    "summary": "About Me",
+    "skills": "Areas of Work",
+    "experience": "Experience",
+    "projects": "Featured Personal Projects",
+    "education": "Education",
+    "languages": "Languages"
+  },
+  "summary": "I'm a Computer Engineer graduated from Tecnológico de Costa Rica, with over 4 years building websites, apps, and video games for companies and my own projects. I currently work at a development studio that takes on projects from different companies, building everything from training simulators to AI-powered virtual characters. In my own time, I've also built a news site that updates itself every day and several video games that anyone can play online today. I learn quickly, adapt well to different teams and clients, and I like finishing what I start.",
+  "skills": {
+    "Web development": [
+      "Websites and browser applications",
+      "Clear, easy-to-use interfaces",
+      "Working with design teams"
+    ],
+    "Video games": [
+      "Games for computer, mobile, and browser",
+      "Online multiplayer games",
+      "Virtual and augmented reality"
+    ],
+    "Artificial intelligence": [
+      "Automating repetitive tasks with AI",
+      "Virtual assistants/characters that hold conversations"
+    ],
+    "Way of working": [
+      "Teamwork",
+      "Meeting deadlines",
+      "Solving technical problems"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Full-Stack and Game Developer",
+      "company": "Opal Interactive",
+      "dates": "Apr 2026 — Present",
+      "sub": "A studio that takes on projects from different companies to build with its team",
+      "bullets": [
+        "Helped build an augmented-reality training simulator for medical staff.",
+        "Developed an interactive kiosk application with a camera for a well-known brand campaign.",
+        "Contributed to a virtual character powered by artificial intelligence that holds conversations with people.",
+        "Collaborated on a web platform connecting companies, and on virtual-reality projects for other clients."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer",
+      "company": "IMMERSO",
+      "dates": "Apr 2021 — Jan 2023",
+      "bullets": [
+        "Built and maintained company websites, connecting what users see with the information stored in the system.",
+        "Worked on interactive and virtual-reality experiences for different projects."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer",
+      "company": "WOW Emotions",
+      "dates": "Jan 2022 — Feb 2023",
+      "bullets": [
+        "Was responsible for the entire development of a virtual-reality website for a reconstruction project.",
+        "Designed and built an immersive nature experience with more than 5 different scenes."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer",
+      "company": "SolvoSoft",
+      "dates": "Aug 2020 — Feb 2021",
+      "bullets": [
+        "Improved features on existing web systems, working as part of a cross-functional team."
+      ]
+    },
+    {
+      "role": "Independent Developer (Freelance)",
+      "company": "Various clients",
+      "dates": "2021 — Present",
+      "bullets": [
+        "For a client (Solucom), built a remote gate-opening system: a small computer (Raspberry Pi) connected to the internet that talks to a website to control access.",
+        "Worked with different clients on web projects, adapting to each one's needs and short deadlines."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "role": "NewsPulse (newspulse.dev)",
+      "company": "personal project",
+      "dates": "Jun 2026 — Present",
+      "sub": "A news site that writes and publishes itself, every day",
+      "bullets": [
+        "Built a system that finds real news, writes it up with the help of artificial intelligence in 4 languages, checks that the information is accurate, and publishes it automatically without anyone doing it by hand."
+      ]
+    },
+    {
+      "role": "Published video games",
+      "company": "personal projects",
+      "dates": "2025 — Present",
+      "sub": "Playable today from a browser or phone",
+      "bullets": [
+        "Designed and programmed several video games, including one online multiplayer game, available to play directly from the internet."
+      ]
+    },
+    {
+      "role": "FeedBack Figuras 3D",
+      "company": "personal project",
+      "dates": "2025 — Present",
+      "sub": "A system for collecting customer opinions",
+      "bullets": [
+        "Built an app where customers can rate and upload photos of custom 3D-printed figures they bought, with a panel to see all the feedback."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Computer Engineering",
+      "place": "Tecnológico de Costa Rica (TEC)",
+      "date": "2019"
+    },
+    {
+      "degree": "High School Diploma",
+      "place": "Liceo San Rafael de Alajuela",
+      "date": "2015"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Intermediate"
+    }
+  ]
+}

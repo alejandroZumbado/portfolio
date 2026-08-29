@@ -1,0 +1,169 @@
+{
+  "lang": "es",
+  "variantFolder": "Videojuegos-VR",
+  "fileBase": "CV_Alejandro_Zumbado_Videojuegos_VR_ES",
+  "name": "Alejandro Zumbado Vargas",
+  "title": "Desarrollador de Videojuegos & VR",
+  "location": "Poás, Alajuela, Costa Rica",
+  "phone": "+506 6022-1640",
+  "email": "aazv.ale@gmail.com",
+  "github": "github.com/alejandroZumbado",
+  "linkedin": null,
+  "labels": {
+    "summary": "Perfil",
+    "skills": "Habilidades",
+    "experience": "Experiencia Laboral",
+    "projects": "Proyectos de Videojuegos y VR Propios",
+    "education": "Educación",
+    "languages": "Idiomas"
+  },
+  "summary": "Ingeniero en Computación (TEC, 2019) apasionado por el desarrollo de videojuegos desde competiciones de programación y diseño de juegos hasta productos publicados. Experiencia en Unity/C# (2D y 3D), networking multijugador (Netcode for GameObjects + Relay), XR para Meta Quest y XREAL, generación procedural de niveles y hasta desarrollo homebrew para Game Boy. Actualmente en Opal Interactive desarrollando simuladores XR y apps de kiosco/AR para clientes; en paralelo publico mis propios juegos y empaqueto mi propia capa de networking como producto independiente.",
+  "skills": {
+    "Motor / Lenguajes": [
+      "Unity",
+      "C#",
+      "Shader Graph / ShaderLab",
+      "Python (IA de juego)"
+    ],
+    "Multijugador": [
+      "Netcode for GameObjects",
+      "Unity Relay",
+      "Photon",
+      "arquitectura cliente-servidor"
+    ],
+    "XR / Plataformas": [
+      "Meta Quest (VR)",
+      "XREAL (AR)",
+      "ARFoundation",
+      "A-Frame.js (VR web)",
+      "Android",
+      "WebGL",
+      "PC"
+    ],
+    "IA / Tooling": [
+      "IA de autojuego (self-play)",
+      "generación procedural de niveles",
+      "herramientas de editor Unity"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Full-Stack / Videojuegos & VR Developer",
+      "company": "Opal Interactive",
+      "dates": "Abr. 2026 — Actualidad",
+      "sub": "Estudio que recibe proyectos de distintas empresas y los reparte entre su equipo",
+      "bullets": [
+        "HealthSim: simulador de entrenamiento en Unity XR (lentes XREAL) para uso de equipo médico láser, con sesiones remotas experto–aprendiz vía Netcode for GameObjects + Unity Relay.",
+        "totempanadol: aplicación Unity de kiosco/AR con cámara térmica, detección facial (ARFoundation) y generación de códigos QR.",
+        "Proyectos adicionales de VR/Unity para clientes del estudio: minigolf VR y activación de marca BrissaNova."
+      ]
+    },
+    {
+      "role": "Desarrollador Full-Stack Jr/Mid (VR)",
+      "company": "WOW Emotions",
+      "dates": "Ene. 2022 — Feb. 2023",
+      "bullets": [
+        "Lideré de extremo a extremo el desarrollo de un sitio web VR para el proyecto de reconstrucción 'Doit'.",
+        "Diseñé y desarrollé 'Giz': experiencia inmersiva con más de 5 niveles VR de fauna y flora."
+      ]
+    },
+    {
+      "role": "Desarrollador Full-Stack Jr/Mid (experiencias 3D/VR web)",
+      "company": "IMMERSO",
+      "dates": "Abr. 2021 — Ene. 2023",
+      "bullets": [
+        "Experiencias web y VR interactivas con A-Frame.js: editores, mapas y contenido dinámico basado en base de datos."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "role": "Tinted Showdown",
+      "company": "juego propio — publicado",
+      "dates": "2025 — Actualidad",
+      "sub": "Multijugador 2–4 jugadores FFA · Unity 6000 · PC / Android / WebGL",
+      "bullets": [
+        "Juego de combate por coincidencia de colores en tiempo real, jugable en https://alejandrozumbado.github.io/tinted-showdown-build/.",
+        "Networking con Netcode for GameObjects + Unity Relay; resolví 8+ problemas reales de producción (selección de endpoint en WebGL, fallback de descompresión, seguridad en Multiplayer Play Mode, límites de serialización de RPCs)."
+      ]
+    },
+    {
+      "role": "QuickLobby — Netcode Relay Kit",
+      "company": "producto propio — en desarrollo",
+      "dates": "Jul. 2026 — Actualidad",
+      "sub": "Sistema de salas por código, en preparación para Fab.com",
+      "bullets": [
+        "Extraje la capa de networking de Tinted Showdown y la empaqueté como asset UPM independiente, con documentación, changelog y licencia propios.",
+        "Resuelve un bug de producción específico de WebGL (selección de endpoint dinámico de Relay) que rompe silenciosamente las implementaciones típicas."
+      ]
+    },
+    {
+      "role": "Cannons",
+      "company": "juego propio — publicado",
+      "dates": "Ago. 2025 — Actualidad",
+      "sub": "Tower-defense · Unity · 500 niveles · PC / Android",
+      "bullets": [
+        "Tower-defense con progresión de hasta 500 niveles y herramientas de editor propias para generación de niveles, jugable en https://alejandrozumbado.github.io/cannons-build/.",
+        "Soporte multiplataforma (PC con mouse, Android táctil) desde una única base de código."
+      ]
+    },
+    {
+      "role": "CannonsLevelGen",
+      "company": "producto propio — IA",
+      "dates": "Ago. 2026 — Actualidad",
+      "sub": "IA de autojuego (self-play) en Python",
+      "bullets": [
+        "Sistema en Python que aprende a jugar Cannons por autojuego y usa lo aprendido para diseñar niveles nuevos, corriendo en GitHub Actions."
+      ]
+    },
+    {
+      "role": "One-Way Royale",
+      "company": "juego propio — publicado",
+      "dates": "2021 — Actualidad",
+      "sub": "Unity · Photon · Backend en Heroku",
+      "bullets": [
+        "Battle royale con backend propio en Heroku y multijugador vía Photon."
+      ]
+    },
+    {
+      "role": "TibetanCalligraphyVRapp",
+      "company": "proyecto en equipo — VR",
+      "dates": "2025 — Actualidad",
+      "sub": "Meta Quest · Unity · co-desarrollado con un compañero",
+      "bullets": [
+        "Aplicación VR de caligrafía tibetana para Meta Quest, con interacción de trazo en un entorno inmersivo."
+      ]
+    },
+    {
+      "role": "ready-gamer (Game Boy homebrew)",
+      "company": "proyecto propio",
+      "dates": "2025 — Actualidad",
+      "sub": "Desarrollo homebrew en C para Game Boy (toolchain ZGB)",
+      "bullets": [
+        "Desarrollo de un juego para hardware real de Game Boy en C, trabajando dentro de las restricciones de memoria y procesamiento del hardware original."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ingeniería en Computación",
+      "place": "Tecnológico de Costa Rica (TEC)",
+      "date": "2019"
+    },
+    {
+      "degree": "Bachillerato / Educación Secundaria",
+      "place": "Liceo San Rafael de Alajuela",
+      "date": "2015"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Español",
+      "level": "Nativo"
+    },
+    {
+      "name": "Inglés",
+      "level": "Intermedio"
+    }
+  ]
+}

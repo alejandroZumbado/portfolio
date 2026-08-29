@@ -1,0 +1,14 @@
+---
+import { stats } from "../data/site";
+---
+
+<div class="grid grid-cols-3 gap-4" data-reveal>
+  {stats.map((s) => (
+    <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface)] py-5 text-center">
+      <div class="stat-value font-display text-3xl font-extrabold text-[var(--accent)] sm:text-4xl">
+        <span data-count={s.value} data-suffix={s.suffix}>0{s.suffix}</span>
+      </div>
+      <div class="mt-1 text-[12px] font-semibold text-[var(--text-soft)] sm:text-[13px]">{s.label}</div>
+    </div>
+  ))}
+</div>

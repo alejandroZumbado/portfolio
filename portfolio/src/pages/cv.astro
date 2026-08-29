@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { cvIndex } from "../data/site";
+---
+
+<Layout title="CVs" description="Descarga el CV de Alejandro Zumbado por área e idioma.">
+  <section class="mx-auto max-w-4xl px-6 py-14">
+    <div data-reveal>
+      <h1 class="font-display text-3xl font-extrabold">Descargar CV</h1>
+      <p class="mt-2 text-[14.5px] text-[var(--text-soft)]">
+        CVs por área e idioma, en HTML y PDF.
+      </p>
+    </div>
+
+    <div class="mt-8 grid gap-3 sm:grid-cols-2">
+      {cvIndex.map((c, i) => (
+        <div
+          class="rounded-xl border border-[var(--border)] bg-[var(--surface)] px-5 py-4 transition-all hover:border-[var(--accent)]"
+          data-reveal
+          style={`transition-delay:${(i % 6) * 60}ms`}
+        >
+          <div class="flex items-center justify-between">
+            <span class="font-display text-[14px] font-bold">{c.label}</span>
+            <span class="rounded-md bg-[var(--accent-soft)] px-2 py-0.5 text-[11px] font-bold text-[var(--accent)]">
+              {c.lang}
+            </span>
+          </div>
+          <div class="mt-3 flex gap-4">
+            <a href={c.pdfHref} target="_blank" rel="noopener" class="text-[12.5px] font-bold text-[var(--accent)] hover:underline">
+              PDF →
+            </a>
+            <a href={c.href} target="_blank" rel="noopener" class="text-[12.5px] font-bold text-[var(--text-soft)] hover:underline">
+              Ver en HTML →
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>

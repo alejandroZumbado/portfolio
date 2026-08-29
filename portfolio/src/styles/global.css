@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Variable", "Inter", system-ui, sans-serif;
+  --font-display: "Outfit Variable", "Outfit", system-ui, sans-serif;
+}
+
+:root {
+  --bg: #fbfaf8;
+  --bg-elevated: #ffffff;
+  --surface: #ffffff;
+  --surface-hover: #f3f1ec;
+  --border: #e6e2d8;
+  --text: #1c1a16;
+  --text-soft: #6b6558;
+  /* #a8460c, not the brighter #c2560f: WCAG AA (4.5:1) against --bg and
+     --accent-soft, and against white button text — verified with a real
+     contrast check, not eyeballed. */
+  --accent: #a8460c;
+  --accent-on: #ffffff;
+  --accent-soft: #fbe6d6;
+  --accent-2: #3a6b5c;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"],
+:root:not([data-theme="light"]) {
+  --bg: #14120f;
+  --bg-elevated: #1b1814;
+  --surface: #1f1c17;
+  --surface-hover: #262119;
+  --border: #33302a;
+  --text: #f3efe7;
+  --text-soft: #a89f8f;
+  --accent: #ef8a4a;
+  --accent-on: #14120f;
+  --accent-soft: #3a2515;
+  --accent-2: #7fc4ab;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #fbfaf8;
+    --bg-elevated: #ffffff;
+    --surface: #ffffff;
+    --surface-hover: #f3f1ec;
+    --border: #e6e2d8;
+    --text: #1c1a16;
+    --text-soft: #6b6558;
+    --accent: #a8460c;
+    --accent-on: #ffffff;
+    --accent-soft: #fbe6d6;
+    --accent-2: #3a6b5c;
+    color-scheme: light;
+  }
+}
+
+html {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+::selection {
+  background: var(--accent);
+  color: #14120f;
+}
+
+/* Scroll-reveal: elements start hidden, JS flips [data-revealed] once in view */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .35s ease, transform .35s ease;
+}
+[data-reveal][data-revealed="true"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1; transform: none; transition: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* View Transitions: named morph for the hero photo + a soft crossfade for page body */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: .28s;
+}
+
+.avatar-morph {
+  view-transition-name: avatar;
+}
+
+/* Aurora: two soft blurred color blobs drifting behind the hero. Pure CSS,
+   contained + pointer-events:none so it never interferes with layout or
+   clicks. Opacity is intentionally low — it should read as ambient warmth,
+   not as decoration you consciously notice. */
+.aurora {
+  position: absolute;
+  inset: -10% -5% auto -5%;
+  height: 130%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.aurora::before,
+.aurora::after {
+  content: "";
+  position: absolute;
+  width: 46vw;
+  height: 46vw;
+  max-width: 560px;
+  max-height: 560px;
+  border-radius: 50%;
+  filter: blur(64px);
+  opacity: 0.35;
+  animation: aurora-drift 22s ease-in-out infinite alternate;
+}
+.aurora::before {
+  top: -8%;
+  left: -6%;
+  background: var(--accent);
+}
+.aurora::after {
+  top: 12%;
+  right: -8%;
+  background: var(--accent-2);
+  animation-duration: 26s;
+  animation-delay: -6s;
+}
+:root[data-theme="dark"] .aurora::before,
+:root:not([data-theme="light"]) .aurora::before,
+:root[data-theme="dark"] .aurora::after,
+:root:not([data-theme="light"]) .aurora::after {
+  opacity: 0.22;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .aurora::before,
+  :root:not([data-theme="dark"]) .aurora::after {
+    opacity: 0.35;
+  }
+}
+@keyframes aurora-drift {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(4%, 6%) scale(1.08); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aurora::before, .aurora::after { animation: none; }
+}
+
+/* Magnetic buttons: JS (public/scripts/magnetic.js) sets --mx/--my per
+   pointer position; this just consumes them for a soft glow + nudge. */
+[data-magnetic] {
+  --mx: 0px;
+  --my: 0px;
+  position: relative;
+  transform: translate(var(--mx), var(--my));
+  transition: transform 0.15s ease-out, box-shadow 0.2s ease;
+}
+[data-magnetic]:hover {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 40%, transparent),
+    0 8px 24px -8px color-mix(in srgb, var(--accent) 55%, transparent);
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-magnetic] { transition: none; transform: none !important; }
+}
+
+/* Stat counters */
+.stat-value {
+  font-variant-numeric: tabular-nums;
+}

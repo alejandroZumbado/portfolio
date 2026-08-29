@@ -1,0 +1,150 @@
+{
+  "lang": "en",
+  "variantFolder": "Backend",
+  "fileBase": "CV_Alejandro_Zumbado_Backend_EN",
+  "name": "Alejandro Zumbado Vargas",
+  "title": "Backend Developer",
+  "location": "Poás, Alajuela, Costa Rica",
+  "phone": "+506 6022-1640",
+  "email": "aazv.ale@gmail.com",
+  "github": "github.com/alejandroZumbado",
+  "linkedin": null,
+  "labels": {
+    "summary": "Summary",
+    "skills": "Skills",
+    "experience": "Work Experience",
+    "projects": "Independent Projects",
+    "education": "Education",
+    "languages": "Languages"
+  },
+  "summary": "Computer Engineer (TEC, 2019) with experience in Django and Node.js building REST APIs, integrations, and server-side logic for web and VR products. Currently at Opal Interactive, contributing to Startus's NestJS backend and the server logic for an AI avatar. In parallel, I design and operate my own backend systems in production: an AI content pipeline that runs with zero human intervention, and multiplayer networking layers for games (Unity Netcode + Relay).",
+  "skills": {
+    "Backend": [
+      "Django",
+      "Node.js",
+      "Express",
+      "NestJS",
+      "REST APIs",
+      "Python"
+    ],
+    "Data / AI": [
+      "LLM integration",
+      "RAG pipelines",
+      "data processing and validation (automated fact-checking)"
+    ],
+    "Infrastructure": [
+      "GitHub Actions (CI/CD)",
+      "Vercel",
+      "Firebase",
+      "cron jobs / automation"
+    ],
+    "Networking (games)": [
+      "Unity Netcode for GameObjects",
+      "Unity Relay",
+      "client-server architecture for WebGL"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Full-Stack Developer (Backend-focused)",
+      "company": "Opal Interactive",
+      "dates": "Apr 2026 — Present",
+      "sub": "Studio that takes on projects from various companies and distributes them across its dev team",
+      "bullets": [
+        "Contributed to Startus's backend (NestJS + Prisma + PostgreSQL), part of a 4-repo SaaS platform.",
+        "Server logic and multiplayer sync (Netcode + Unity Relay) for HealthSim, an XR training simulator.",
+        "Firebase integration for totempanadol (storage and QR generation)."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer, Backend-focused (Jr/Mid)",
+      "company": "IMMERSO",
+      "dates": "Apr 2021 — Jan 2023",
+      "bullets": [
+        "Built Django backends powering React.js/Next.js frontends.",
+        "Database-driven content for editors and maps used in web/VR experiences."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer (Jr)",
+      "company": "SolvoSoft",
+      "dates": "Aug 2020 — Feb 2021",
+      "bullets": [
+        "Developed and optimized features with Django on legacy systems.",
+        "Collaborated with cross-functional teams to improve system performance."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer (Jr/Mid)",
+      "company": "WOW Emotions",
+      "dates": "Jan 2022 — Feb 2023",
+      "bullets": [
+        "Implemented server-side functionality for an end-to-end VR website.",
+        "Optimized performance across devices and browsers."
+      ]
+    },
+    {
+      "role": "React / Frontend Developer",
+      "company": "Freelance — independent projects",
+      "dates": "2021 — Present",
+      "sub": "API integrations for various clients",
+      "bullets": [
+        "Solucom — Remote Gate Access (2023): IoT access-control system with a Raspberry Pi (Python) as the physical controller, Vue.js frontend, and Laravel/PHP backend, synced over an API with a password database.",
+        "Integrated frontend applications with third-party REST APIs under varying requirements and deadlines."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "role": "NewsPulse",
+      "company": "personal product — newspulse.dev",
+      "dates": "Jun 2026 — Present",
+      "sub": "Fully autonomous Python backend pipeline",
+      "bullets": [
+        "Python orchestration (research → LLM writing → fact-check → publish) run on a GitHub Actions cron with no human in the loop.",
+        "Published as static JSON consumed by the frontend, with deploys triggered on every push."
+      ]
+    },
+    {
+      "role": "QuickLobby — Netcode Relay Kit",
+      "company": "personal product — in development",
+      "dates": "Jul 2026 — Present",
+      "sub": "Extracted, packaged multiplayer networking layer",
+      "bullets": [
+        "Extracted and packaged the connection logic (Netcode for GameObjects + Unity Relay) from my game Tinted Showdown as a standalone UPM package.",
+        "Fixed WebGL-specific production bugs in Relay endpoint selection; preparing for release on Fab.com."
+      ]
+    },
+    {
+      "role": "FeedBack Figuras 3D",
+      "company": "personal product",
+      "dates": "2025 — Present",
+      "sub": "Supabase backend",
+      "bullets": [
+        "Data validation with Zod, admin panel, and feedback export in JSON format."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Computer Engineering",
+      "place": "Tecnológico de Costa Rica (TEC)",
+      "date": "2019"
+    },
+    {
+      "degree": "High School Diploma",
+      "place": "Liceo San Rafael de Alajuela",
+      "date": "2015"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Intermediate"
+    }
+  ]
+}

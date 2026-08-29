@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{TITLE}}</title>
+<style>{{CSS}}</style>
+</head>
+<body>
+<div class="page">
+  <header class="cv-header">
+    <img src="{{PHOTO}}" alt="{{NAME}}" />
+    <div class="id-block">
+      <h1>{{NAME}}</h1>
+      <p class="role">{{ROLE}}</p>
+      <div class="contact-row">{{CONTACT_ROW}}</div>
+    </div>
+  </header>
+
+  <section>
+    <h2>{{LABEL_SUMMARY}}</h2>
+    <p class="summary">{{SUMMARY}}</p>
+  </section>
+
+  <section>
+    <h2>{{LABEL_SKILLS}}</h2>
+    {{SKILLS}}
+  </section>
+
+  <section>
+    <h2>{{LABEL_EXPERIENCE}}</h2>
+    {{EXPERIENCE}}
+  </section>
+
+  <section>
+    <h2>{{LABEL_PROJECTS}}</h2>
+    {{PROJECTS}}
+  </section>
+
+  <div class="two-col">
+    <section>
+      <h2>{{LABEL_EDUCATION}}</h2>
+      {{EDUCATION}}
+    </section>
+    <section>
+      <h2>{{LABEL_LANGUAGES}}</h2>
+      <div class="chip-row">{{LANGUAGES}}</div>
+    </section>
+  </div>
+</div>
+</body>
+</html>

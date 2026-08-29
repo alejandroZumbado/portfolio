@@ -1,0 +1,169 @@
+{
+  "lang": "en",
+  "variantFolder": "Video-Games-VR",
+  "fileBase": "CV_Alejandro_Zumbado_VideoGames_VR_EN",
+  "name": "Alejandro Zumbado Vargas",
+  "title": "Game & VR Developer",
+  "location": "Poás, Alajuela, Costa Rica",
+  "phone": "+506 6022-1640",
+  "email": "aazv.ale@gmail.com",
+  "github": "github.com/alejandroZumbado",
+  "linkedin": null,
+  "labels": {
+    "summary": "Summary",
+    "skills": "Skills",
+    "experience": "Work Experience",
+    "projects": "Personal Game & VR Projects",
+    "education": "Education",
+    "languages": "Languages"
+  },
+  "summary": "Computer Engineer (TEC, 2019) passionate about game development, from competitive programming and game design competitions to shipped products. Experience with Unity/C# (2D and 3D), multiplayer networking (Netcode for GameObjects + Relay), XR for Meta Quest and XREAL, procedural level generation, and even Game Boy homebrew development. Currently at Opal Interactive building XR simulators and kiosk/AR apps for clients; in parallel I publish my own games and I'm packaging my own networking layer as a standalone product.",
+  "skills": {
+    "Engine / Languages": [
+      "Unity",
+      "C#",
+      "Shader Graph / ShaderLab",
+      "Python (game AI)"
+    ],
+    "Multiplayer": [
+      "Netcode for GameObjects",
+      "Unity Relay",
+      "Photon",
+      "client-server architecture"
+    ],
+    "XR / Platforms": [
+      "Meta Quest (VR)",
+      "XREAL (AR)",
+      "ARFoundation",
+      "A-Frame.js (web VR)",
+      "Android",
+      "WebGL",
+      "PC"
+    ],
+    "AI / Tooling": [
+      "Self-play game AI",
+      "procedural level generation",
+      "Unity editor tooling"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Full-Stack / Game & VR Developer",
+      "company": "Opal Interactive",
+      "dates": "Apr 2026 — Present",
+      "sub": "Studio that takes on projects from various companies and distributes them across its dev team",
+      "bullets": [
+        "HealthSim: Unity XR training simulator (XREAL glasses) for medical laser equipment, with remote expert–trainee sessions via Netcode for GameObjects + Unity Relay.",
+        "totempanadol: Unity kiosk/AR app with thermal camera, face detection (ARFoundation), and QR code generation.",
+        "Additional VR/Unity projects for studio clients: a VR minigolf game and a BrissaNova brand activation."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer, VR-focused (Jr/Mid)",
+      "company": "WOW Emotions",
+      "dates": "Jan 2022 — Feb 2023",
+      "bullets": [
+        "Led end-to-end development of a VR-enabled website for the 'Doit' reconstruction project.",
+        "Designed and built 'Giz': an immersive nature experience with 5+ VR levels."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer, 3D/Web VR-focused (Jr/Mid)",
+      "company": "IMMERSO",
+      "dates": "Apr 2021 — Jan 2023",
+      "bullets": [
+        "Built interactive web and VR experiences with A-Frame.js: editors, maps, and database-driven content."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "role": "Tinted Showdown",
+      "company": "personal game — published",
+      "dates": "2025 — Present",
+      "sub": "2–4 player FFA multiplayer · Unity 6000 · PC / Android / WebGL",
+      "bullets": [
+        "Real-time color-matching combat game, playable at https://alejandrozumbado.github.io/tinted-showdown-build/.",
+        "Networking built with Netcode for GameObjects + Unity Relay; fixed 8+ real production issues (WebGL endpoint selection, decompression fallback, Multiplayer Play Mode safety, RPC serialization limits)."
+      ]
+    },
+    {
+      "role": "QuickLobby — Netcode Relay Kit",
+      "company": "personal product — in development",
+      "dates": "Jul 2026 — Present",
+      "sub": "Drop-in join-code lobby system, preparing for release on Fab.com",
+      "bullets": [
+        "Extracted the networking layer from Tinted Showdown and packaged it as a standalone UPM asset with its own docs, changelog, and license.",
+        "Fixes a WebGL-specific production bug (dynamic Relay endpoint selection) that silently breaks typical from-scratch implementations."
+      ]
+    },
+    {
+      "role": "Cannons",
+      "company": "personal game — published",
+      "dates": "Aug 2025 — Present",
+      "sub": "Tower-defense · Unity · 500 levels · PC / Android",
+      "bullets": [
+        "Tower-defense game with progression across up to 500 levels and custom editor tooling for level generation, playable at https://alejandrozumbado.github.io/cannons-build/.",
+        "Cross-platform support (PC mouse, Android touch) from a single codebase."
+      ]
+    },
+    {
+      "role": "CannonsLevelGen",
+      "company": "personal AI product",
+      "dates": "Aug 2026 — Present",
+      "sub": "Self-play game AI in Python",
+      "bullets": [
+        "Python system that learns to play Cannons through self-play and uses what it learns to design new levels, running on GitHub Actions."
+      ]
+    },
+    {
+      "role": "One-Way Royale",
+      "company": "personal game — published",
+      "dates": "2021 — Present",
+      "sub": "Unity · Photon · Heroku backend",
+      "bullets": [
+        "Battle royale game with a self-built Heroku backend and Photon multiplayer."
+      ]
+    },
+    {
+      "role": "TibetanCalligraphyVRapp",
+      "company": "team project — VR",
+      "dates": "2025 — Present",
+      "sub": "Meta Quest · Unity · co-developed with a teammate",
+      "bullets": [
+        "VR Tibetan calligraphy app for Meta Quest, with brush-stroke interaction in an immersive environment."
+      ]
+    },
+    {
+      "role": "ready-gamer (Game Boy homebrew)",
+      "company": "personal project",
+      "dates": "2025 — Present",
+      "sub": "Homebrew C development for Game Boy (ZGB toolchain)",
+      "bullets": [
+        "Built a game for real Game Boy hardware in C, working within the original hardware's memory and processing constraints."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Computer Engineering",
+      "place": "Tecnológico de Costa Rica (TEC)",
+      "date": "2019"
+    },
+    {
+      "degree": "High School Diploma",
+      "place": "Liceo San Rafael de Alajuela",
+      "date": "2015"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Intermediate"
+    }
+  ]
+}

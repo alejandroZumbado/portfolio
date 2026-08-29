@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Timeline from "../components/Timeline.astro";
+import { experience } from "../data/site";
+---
+
+<Layout title="Experiencia" description="Trayectoria profesional y educación de Alejandro Zumbado.">
+  <section class="mx-auto max-w-3xl px-6 py-14">
+    <div data-reveal>
+      <h1 class="font-display text-3xl font-extrabold">Experiencia</h1>
+      <p class="mt-2 text-[14.5px] text-[var(--text-soft)]">Trayectoria profesional y educación.</p>
+    </div>
+    <div class="mt-10">
+      <Timeline entries={experience} />
+    </div>
+  </section>
+</Layout>

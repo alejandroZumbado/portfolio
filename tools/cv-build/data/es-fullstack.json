@@ -1,0 +1,172 @@
+{
+  "lang": "es",
+  "variantFolder": "Full-Stack",
+  "fileBase": "CV_Alejandro_Zumbado_FullStack_ES",
+  "name": "Alejandro Zumbado Vargas",
+  "title": "Full Stack Developer",
+  "location": "Poás, Alajuela, Costa Rica",
+  "phone": "+506 6022-1640",
+  "email": "aazv.ale@gmail.com",
+  "github": "github.com/alejandroZumbado",
+  "linkedin": null,
+  "labels": {
+    "summary": "Perfil",
+    "skills": "Habilidades",
+    "experience": "Experiencia Laboral",
+    "projects": "Proyectos Propios",
+    "education": "Educación",
+    "languages": "Idiomas"
+  },
+  "summary": "Ingeniero en Computación (TEC, 2019) con más de 4 años de experiencia construyendo productos web de extremo a extremo: frontend en React/Next.js, backend en Django/Node.js, APIs REST e integraciones con IA (LLMs). Actualmente en Opal Interactive, desarrollando proyectos para distintos clientes (simuladores XR, apps de kiosco/AR, avatares con IA). En paralelo, diseño y publico mis propios productos — un pipeline de contenido automatizado con IA (newspulse.dev) y videojuegos multijugador publicados en WebGL — cubriendo diseño, desarrollo, despliegue (CI/CD) y mantenimiento.",
+  "skills": {
+    "Lenguajes": [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "C#"
+    ],
+    "Frontend": [
+      "React",
+      "Next.js",
+      "Astro",
+      "Three.js / WebGL",
+      "HTML",
+      "CSS"
+    ],
+    "Backend": [
+      "Node.js",
+      "Express",
+      "NestJS",
+      "Django",
+      "REST APIs"
+    ],
+    "IA / Datos": [
+      "Integración de LLMs (Gemini)",
+      "pipelines RAG",
+      "automatización de contenido"
+    ],
+    "DevOps": [
+      "Git/GitHub",
+      "GitHub Actions (CI/CD)",
+      "Vercel",
+      "Firebase",
+      "pnpm workspaces"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Full-Stack Developer",
+      "company": "Opal Interactive",
+      "dates": "Abr. 2026 — Actualidad",
+      "sub": "Estudio que recibe proyectos de distintas empresas y los reparte entre su equipo",
+      "bullets": [
+        "Opal Web Avatar: plataforma de avatares interactivos con IA — React 19, Express, lipsync, RAG.",
+        "HealthSim: simulador de entrenamiento en Unity XR para equipo médico, con sesiones remotas vía Netcode + Unity Relay.",
+        "totempanadol: app Unity de kiosco/AR con cámara térmica, detección facial y Firebase.",
+        "Contribución a Startus: SaaS de 4 repos (NestJS, React, FastAPI, extensión de Chrome)."
+      ]
+    },
+    {
+      "role": "Desarrollador React / Frontend",
+      "company": "Freelance — proyectos independientes",
+      "dates": "2021 — Actualidad",
+      "sub": "Múltiples clientes y proyectos",
+      "bullets": [
+        "Solucom — Apertura Remota (2023): sistema de control de acceso IoT con Raspberry Pi (Python) para el dispositivo físico, frontend en Vue.js y backend en Laravel/PHP, sincronizado por API con una base de datos de contraseñas.",
+        "Desarrollo de aplicaciones y componentes con React, arquitectura limpia y diseño responsivo.",
+        "Integración con APIs, corrección de errores y mejoras de rendimiento bajo plazos ajustados."
+      ]
+    },
+    {
+      "role": "Desarrollador Full-Stack Jr/Mid",
+      "company": "IMMERSO",
+      "dates": "Abr. 2021 — Ene. 2023",
+      "bullets": [
+        "Frontends con React.js y Next.js conectados a backends en Django.",
+        "Experiencias web y VR interactivas con A-Frame.js: editores, mapas y contenido dinámico basado en base de datos."
+      ]
+    },
+    {
+      "role": "Desarrollador Full-Stack Jr/Mid",
+      "company": "WOW Emotions",
+      "dates": "Ene. 2022 — Feb. 2023",
+      "bullets": [
+        "Lideré de extremo a extremo el desarrollo de un sitio web VR para el proyecto de reconstrucción 'Doit'.",
+        "Diseñé y desarrollé 'Giz', una experiencia inmersiva con más de 5 niveles VR de fauna y flora.",
+        "Optimización de rendimiento y consistencia visual entre dispositivos y navegadores."
+      ]
+    },
+    {
+      "role": "Desarrollador Full-Stack Jr",
+      "company": "SolvoSoft",
+      "dates": "Ago. 2020 — Feb. 2021",
+      "bullets": [
+        "Desarrollo y optimización de funcionalidades web con JavaScript y Django sobre sistemas legados.",
+        "Colaboración con equipos multifuncionales para mejorar rendimiento y capacidad de respuesta de la UI."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "role": "NewsPulse",
+      "company": "producto propio — newspulse.dev",
+      "dates": "Jun. 2026 — Actualidad",
+      "sub": "Pipeline de noticias 100% autónomo, generado por IA",
+      "bullets": [
+        "Pipeline en Python que investiga noticias vía RSS, redacta artículos en 4 idiomas con un LLM y verifica los hechos contra las fuentes originales antes de publicar.",
+        "Frontend estático con Astro + Tailwind, desplegado en Vercel; publicación automática por cron de GitHub Actions sin intervención humana."
+      ]
+    },
+    {
+      "role": "Tinted Showdown",
+      "company": "juego propio — publicado",
+      "dates": "2025 — Actualidad",
+      "sub": "Multijugador 2–4 jugadores, PC / Android / WebGL",
+      "bullets": [
+        "Juego multijugador en Unity con Netcode for GameObjects + Unity Relay; build publicado y jugable en WebGL.",
+        "Extraigo la capa de networking como paquete independiente (QuickLobby — Netcode Relay Kit), en desarrollo para publicar como asset de Unity."
+      ]
+    },
+    {
+      "role": "Cannons",
+      "company": "juego propio — publicado",
+      "dates": "Ago. 2025 — Actualidad",
+      "sub": "Tower-defense, 500 niveles",
+      "bullets": [
+        "Tower-defense en Unity con progresión de hasta 500 niveles y una IA propia (Python) que juega y diseña niveles nuevos por autojuego."
+      ]
+    },
+    {
+      "role": "FeedBack Figuras 3D",
+      "company": "producto propio",
+      "dates": "2025 — Actualidad",
+      "sub": "Sistema de recolección de feedback de clientes",
+      "bullets": [
+        "Aplicación con Next.js 15 y React 19 para calificar figuras 3D personalizadas por categoría, subir fotos y exportar resultados desde un panel de administración.",
+        "Backend con Supabase, validación con Zod y React Hook Form, animaciones con Framer Motion."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ingeniería en Computación",
+      "place": "Tecnológico de Costa Rica (TEC)",
+      "date": "2019"
+    },
+    {
+      "degree": "Bachillerato / Educación Secundaria",
+      "place": "Liceo San Rafael de Alajuela",
+      "date": "2015"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Español",
+      "level": "Nativo"
+    },
+    {
+      "name": "Inglés",
+      "level": "Intermedio"
+    }
+  ]
+}

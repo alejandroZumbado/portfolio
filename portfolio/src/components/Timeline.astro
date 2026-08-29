@@ -1,0 +1,30 @@
+---
+import type { TimelineEntry } from "../data/site";
+
+interface Props {
+  entries: TimelineEntry[];
+}
+const { entries } = Astro.props;
+---
+
+<div class="flex flex-col">
+  {entries.map((e, i) => (
+    <div
+      class="relative border-l-2 border-[var(--border)] pb-8 pl-7 last:border-transparent last:pb-0"
+      data-reveal
+      style={`transition-delay:${Math.min(i, 5) * 60}ms`}
+    >
+      <span class="absolute -left-[7px] top-1 h-3 w-3 rounded-full bg-[var(--accent)]"></span>
+      <div class="text-[12px] font-bold text-[var(--text-soft)]">{e.dates}</div>
+      <h3 class="mt-0.5 font-display text-[16px] font-bold">
+        {e.role}{e.company ? ` — ${e.company}` : ""}
+      </h3>
+      {e.sub && <p class="text-[13px] text-[var(--text-soft)]">{e.sub}</p>}
+      {e.bullets.length > 0 && (
+        <ul class="mt-2 list-disc space-y-1 pl-4 text-[13.5px] text-[var(--text)]">
+          {e.bullets.map((b) => <li>{b}</li>)}
+        </ul>
+      )}
+    </div>
+  ))}
+</div>

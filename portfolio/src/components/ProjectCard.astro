@@ -1,0 +1,45 @@
+---
+import type { Project } from "../data/site";
+
+interface Props {
+  project: Project;
+}
+const { project } = Astro.props;
+---
+
+<article
+  class="group flex flex-col gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 transition-all hover:-translate-y-1 hover:border-[var(--accent)] hover:shadow-lg hover:shadow-black/5"
+  data-categories={project.categories.join(",")}
+>
+  <div class="grid h-28 place-items-center rounded-xl border border-[var(--border)] bg-[var(--accent-soft)] text-3xl">
+    {project.emoji}
+  </div>
+  <h3 class="font-display text-[16px] font-bold">{project.name}</h3>
+  <p class="text-[13.5px] leading-relaxed text-[var(--text-soft)]">{project.description}</p>
+  <div class="flex flex-wrap gap-1.5">
+    {project.tech.map((t) => (
+      <span class="rounded-md border border-[var(--border)] px-2 py-0.5 text-[11px] font-bold text-[var(--text-soft)]">
+        {t}
+      </span>
+    ))}
+  </div>
+  {(project.demo || project.repo) && (
+    <div class="mt-auto flex gap-4 pt-1">
+      {project.demo && (
+        <a href={project.demo} target="_blank" rel="noopener" class="text-[12.5px] font-bold text-[var(--accent)] hover:underline">
+          Demo →
+        </a>
+      )}
+      {project.repo && (
+        <a href={project.repo} target="_blank" rel="noopener" class="text-[12.5px] font-bold text-[var(--accent)] hover:underline">
+          Código →
+        </a>
+      )}
+    </div>
+  )}
+  {!project.demo && !project.repo && project.status && (
+    <span class="mt-auto w-fit rounded-md bg-[var(--accent-soft)] px-2.5 py-1 text-[11.5px] font-bold text-[var(--accent)]">
+      {project.status}
+    </span>
+  )}
+</article>

@@ -1,0 +1,172 @@
+{
+  "lang": "en",
+  "variantFolder": "Full-Stack",
+  "fileBase": "CV_Alejandro_Zumbado_FullStack_EN",
+  "name": "Alejandro Zumbado Vargas",
+  "title": "Full Stack Developer",
+  "location": "Poás, Alajuela, Costa Rica",
+  "phone": "+506 6022-1640",
+  "email": "aazv.ale@gmail.com",
+  "github": "github.com/alejandroZumbado",
+  "linkedin": null,
+  "labels": {
+    "summary": "Summary",
+    "skills": "Skills",
+    "experience": "Work Experience",
+    "projects": "Independent Projects",
+    "education": "Education",
+    "languages": "Languages"
+  },
+  "summary": "Computer Engineer (TEC, 2019) with 4+ years building end-to-end web products: React/Next.js frontends, Django/Node.js backends, REST APIs, and LLM integrations. Currently at Opal Interactive, building projects for various clients (XR simulators, kiosk/AR apps, AI avatars). In parallel, I design and ship my own products — an AI-driven autonomous content pipeline (newspulse.dev) and published multiplayer WebGL games — owning design, development, deployment (CI/CD), and maintenance.",
+  "skills": {
+    "Languages": [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "C#"
+    ],
+    "Frontend": [
+      "React",
+      "Next.js",
+      "Astro",
+      "Three.js / WebGL",
+      "HTML",
+      "CSS"
+    ],
+    "Backend": [
+      "Node.js",
+      "Express",
+      "NestJS",
+      "Django",
+      "REST APIs"
+    ],
+    "AI / Data": [
+      "LLM integration (Gemini)",
+      "RAG pipelines",
+      "content automation"
+    ],
+    "DevOps": [
+      "Git/GitHub",
+      "GitHub Actions (CI/CD)",
+      "Vercel",
+      "Firebase",
+      "pnpm workspaces"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Full-Stack Developer",
+      "company": "Opal Interactive",
+      "dates": "Apr 2026 — Present",
+      "sub": "Studio that takes on projects from various companies and distributes them across its dev team",
+      "bullets": [
+        "Opal Web Avatar: interactive AI avatar platform — React 19, Express, lipsync, RAG.",
+        "HealthSim: Unity XR training simulator for medical equipment, with remote sessions via Netcode + Unity Relay.",
+        "totempanadol: Unity kiosk/AR app with thermal camera, face detection, and Firebase.",
+        "Contributed to Startus: a 4-repo SaaS platform (NestJS, React, FastAPI, Chrome extension)."
+      ]
+    },
+    {
+      "role": "React / Frontend Developer",
+      "company": "Freelance — independent projects",
+      "dates": "2021 — Present",
+      "sub": "Multiple clients and projects",
+      "bullets": [
+        "Solucom — Remote Gate Access (2023): IoT access-control system with a Raspberry Pi (Python) as the physical controller, Vue.js frontend, and Laravel/PHP backend, synced over an API with a password database.",
+        "Built applications and components with React: clean architecture, reusable components, responsive design.",
+        "Integrated third-party APIs, fixed bugs, and improved performance under tight deadlines."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer (Jr/Mid)",
+      "company": "IMMERSO",
+      "dates": "Apr 2021 — Jan 2023",
+      "bullets": [
+        "Built and maintained frontends with React.js and Next.js connected to Django backends.",
+        "Built interactive web and VR experiences with A-Frame.js: editors, maps, and database-driven content."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer (Jr/Mid)",
+      "company": "WOW Emotions",
+      "dates": "Jan 2022 — Feb 2023",
+      "bullets": [
+        "Led end-to-end development of a VR-enabled website for the 'Doit' reconstruction project.",
+        "Designed and built 'Giz', an immersive nature experience with 5+ VR levels.",
+        "Optimized performance and visual consistency across devices and browsers."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer (Jr)",
+      "company": "SolvoSoft",
+      "dates": "Aug 2020 — Feb 2021",
+      "bullets": [
+        "Developed and optimized web features with JavaScript and Django on legacy systems.",
+        "Collaborated with cross-functional teams to improve UI performance and responsiveness."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "role": "NewsPulse",
+      "company": "personal product — newspulse.dev",
+      "dates": "Jun 2026 — Present",
+      "sub": "Fully autonomous, AI-generated news pipeline",
+      "bullets": [
+        "Python pipeline that researches news via RSS, writes articles in 4 languages with an LLM, and fact-checks them against source material before publishing.",
+        "Static frontend built with Astro + Tailwind, deployed on Vercel; publishing runs automatically on a GitHub Actions cron with no human in the loop."
+      ]
+    },
+    {
+      "role": "Tinted Showdown",
+      "company": "personal game — published",
+      "dates": "2025 — Present",
+      "sub": "2–4 player multiplayer, PC / Android / WebGL",
+      "bullets": [
+        "Multiplayer Unity game with Netcode for GameObjects + Unity Relay; live, playable WebGL build.",
+        "Extracting the networking layer as a standalone package (QuickLobby — Netcode Relay Kit), in development for release as a Unity asset."
+      ]
+    },
+    {
+      "role": "Cannons",
+      "company": "personal game — published",
+      "dates": "Aug 2025 — Present",
+      "sub": "Tower-defense, 500 levels",
+      "bullets": [
+        "Unity tower-defense with progression across up to 500 levels and a self-play Python AI that plays and designs new levels."
+      ]
+    },
+    {
+      "role": "FeedBack Figuras 3D",
+      "company": "personal product",
+      "dates": "2025 — Present",
+      "sub": "Customer feedback collection system",
+      "bullets": [
+        "Next.js 15 + React 19 app for rating custom 3D-printed figures by category, uploading photos, and exporting results from an admin panel.",
+        "Backend with Supabase, validation with Zod and React Hook Form, animations with Framer Motion."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Computer Engineering",
+      "place": "Tecnológico de Costa Rica (TEC)",
+      "date": "2019"
+    },
+    {
+      "degree": "High School Diploma",
+      "place": "Liceo San Rafael de Alajuela",
+      "date": "2015"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Intermediate"
+    }
+  ]
+}

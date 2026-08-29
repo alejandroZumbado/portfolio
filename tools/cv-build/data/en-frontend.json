@@ -1,0 +1,154 @@
+{
+  "lang": "en",
+  "variantFolder": "Frontend",
+  "fileBase": "CV_Alejandro_Zumbado_Frontend_EN",
+  "name": "Alejandro Zumbado Vargas",
+  "title": "Frontend Developer",
+  "location": "Poás, Alajuela, Costa Rica",
+  "phone": "+506 6022-1640",
+  "email": "aazv.ale@gmail.com",
+  "github": "github.com/alejandroZumbado",
+  "linkedin": null,
+  "labels": {
+    "summary": "Summary",
+    "skills": "Skills",
+    "experience": "Work Experience",
+    "projects": "Independent Projects",
+    "education": "Education",
+    "languages": "Languages"
+  },
+  "summary": "Computer Engineer (TEC, 2019) specialized in React interfaces and interactive 3D/WebGL experiences. 4+ years building responsive UIs, reusable components, and immersive experiences (web VR, real-time interactive avatars). Currently at Opal Interactive, building the interface for an AI avatar and kiosk/AR apps for studio clients. Careful about performance and visual consistency across browsers and devices.",
+  "skills": {
+    "Frontend": [
+      "React",
+      "Next.js",
+      "Astro",
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "Graphics / 3D": [
+      "Three.js",
+      "WebGL",
+      "A-Frame.js (web VR)",
+      "Shaders (Shader Graph)"
+    ],
+    "UI / UX": [
+      "Responsive design",
+      "Reusable components",
+      "Basic accessibility",
+      "Performance optimization"
+    ],
+    "Tooling": [
+      "Vite",
+      "Git/GitHub",
+      "Vitest",
+      "ESLint / Prettier"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Full-Stack Developer (Frontend-focused)",
+      "company": "Opal Interactive",
+      "dates": "Apr 2026 — Present",
+      "sub": "Studio that takes on projects from various companies and distributes them across its dev team",
+      "bullets": [
+        "Opal Web Avatar: React 19 interface for an interactive AI avatar with lipsync and webcam gaze tracking.",
+        "totempanadol: interface for a Unity kiosk/AR app with thermal camera and face detection.",
+        "Web interface for HealthSim, a Unity XR training simulator."
+      ]
+    },
+    {
+      "role": "React / Frontend Developer",
+      "company": "Freelance — independent projects",
+      "dates": "2021 — Present",
+      "sub": "Multiple clients and projects",
+      "bullets": [
+        "Solucom — Remote Gate Access (2023): IoT access-control system with a Raspberry Pi (Python) as the physical controller, Vue.js frontend, and Laravel/PHP backend, synced over an API with a password database.",
+        "Built multiple applications and components with React: clean architecture, reusable components, responsive design.",
+        "Implemented UI features, API integrations, bug fixes, and performance improvements under tight deadlines."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer, Frontend-focused (Jr/Mid)",
+      "company": "IMMERSO",
+      "dates": "Apr 2021 — Jan 2023",
+      "bullets": [
+        "Built and maintained frontends with React.js and Next.js connected to Django backends.",
+        "Built interactive web VR experiences with A-Frame.js: visual editors, maps, and database-driven content."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer, Frontend/VR-focused (Jr/Mid)",
+      "company": "WOW Emotions",
+      "dates": "Jan 2022 — Feb 2023",
+      "bullets": [
+        "Built the interface for a VR website for the 'Doit' reconstruction project.",
+        "Designed and built 'Giz': an immersive nature experience with 5+ VR levels.",
+        "Design consistency and optimized performance across devices and browsers."
+      ]
+    },
+    {
+      "role": "Full-Stack Developer (Jr)",
+      "company": "SolvoSoft",
+      "dates": "Aug 2020 — Feb 2021",
+      "bullets": [
+        "Optimized web features with JavaScript on legacy systems.",
+        "Improved UI performance and responsiveness."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "role": "NewsPulse",
+      "company": "personal product — newspulse.dev",
+      "dates": "Jun 2026 — Present",
+      "sub": "High-performance static frontend",
+      "bullets": [
+        "Site built with Astro + Tailwind CSS, optimized for fast loads and SEO, with content in 4 languages.",
+        "Continuous deployment to Vercel triggered by every automated content publish."
+      ]
+    },
+    {
+      "role": "Tinted Showdown / Cannons",
+      "company": "personal games — published on WebGL",
+      "dates": "2025 — Present",
+      "sub": "Real-time UI and interaction in-browser",
+      "bullets": [
+        "Multiplayer game interfaces (color selection, code-based rooms, HUD) running inside published WebGL builds."
+      ]
+    },
+    {
+      "role": "FeedBack Figuras 3D",
+      "company": "personal product",
+      "dates": "2025 — Present",
+      "sub": "Next.js 15 · React 19",
+      "bullets": [
+        "Animated star-rating interface (Framer Motion), drag & drop photo upload, light/dark theme, responsive design."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Computer Engineering",
+      "place": "Tecnológico de Costa Rica (TEC)",
+      "date": "2019"
+    },
+    {
+      "degree": "High School Diploma",
+      "place": "Liceo San Rafael de Alajuela",
+      "date": "2015"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Intermediate"
+    }
+  ]
+}

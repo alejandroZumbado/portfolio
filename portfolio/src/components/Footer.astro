@@ -1,0 +1,10 @@
+---
+import { profile } from "../data/site";
+---
+
+<footer class="border-t border-[var(--border)] py-8">
+  <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-6 text-[13px] text-[var(--text-soft)]">
+    <span>© {new Date().getFullYear()} {profile.name}</span>
+    <span>{profile.location}</span>
+  </div>
+</footer>

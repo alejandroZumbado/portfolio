@@ -1,0 +1,85 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import StatsRow from "../components/StatsRow.astro";
+import { profile, heroTags, projects } from "../data/site";
+import avatar from "../assets/foto-perfil.jpg";
+import { Image } from "astro:assets";
+
+const featured = projects.slice(0, 3);
+---
+
+<Layout title="Inicio" description={profile.about}>
+  <section class="relative mx-auto max-w-5xl overflow-hidden px-6 pb-10 pt-16 sm:pt-24">
+    <div class="aurora" aria-hidden="true"></div>
+    <div class="relative z-10 grid items-center gap-10 sm:grid-cols-[auto_1fr]">
+      <Image
+        src={avatar}
+        alt={profile.name}
+        width={168}
+        height={168}
+        class="avatar-morph mx-auto h-36 w-36 rounded-3xl border border-[var(--border)] object-cover sm:h-42 sm:w-42"
+      />
+      <div class="text-center sm:text-left">
+        <h1 class="font-display text-4xl font-extrabold tracking-tight sm:text-5xl">
+          {profile.name}
+        </h1>
+        <p
+          class="mt-2 h-7 font-display text-lg font-semibold text-[var(--accent)]"
+          id="role-cycle"
+          data-roles={JSON.stringify(profile.roles)}
+        >
+          {profile.roles[0]}
+        </p>
+        <div class="mt-4 flex flex-wrap justify-center gap-2 sm:justify-start">
+          {heroTags.map((t) => (
+            <span class="rounded-full bg-[var(--accent-soft)] px-3 py-1 text-[12.5px] font-bold text-[var(--accent)]">
+              {t}
+            </span>
+          ))}
+        </div>
+        <div class="mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
+          <a href="/cv" data-magnetic class="rounded-full bg-[var(--accent)] px-5 py-2.5 text-[14px] font-bold text-[var(--accent-on)] transition hover:brightness-110">
+            Descargar CV
+          </a>
+          <a href="/proyectos" data-magnetic class="rounded-full border border-[var(--border)] px-5 py-2.5 text-[14px] font-bold transition hover:border-[var(--accent)]">
+            Ver proyectos
+          </a>
+          <a href="/contacto" data-magnetic class="rounded-full border border-[var(--border)] px-5 py-2.5 text-[14px] font-bold transition hover:border-[var(--accent)]">
+            Contacto
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-6 py-6">
+    <StatsRow />
+  </section>
+
+  <section class="mx-auto max-w-5xl px-6 py-10" data-reveal>
+    <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-7">
+      <p class="text-[15px] leading-relaxed text-[var(--text-soft)]">{profile.about}</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-6 py-10">
+    <div class="mb-6 flex items-end justify-between" data-reveal>
+      <div>
+        <h2 class="font-display text-2xl font-bold">Proyectos destacados</h2>
+        <p class="mt-1 text-[14px] text-[var(--text-soft)]">Una muestra — el catálogo completo está en Proyectos.</p>
+      </div>
+      <a href="/proyectos" class="hidden text-[13.5px] font-bold text-[var(--accent)] hover:underline sm:block">Ver todos →</a>
+    </div>
+    <div class="grid gap-5 sm:grid-cols-3">
+      {featured.map((p, i) => (
+        <div data-reveal style={`transition-delay:${i * 90}ms`}>
+          <ProjectCard project={p} />
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<script src="/scripts/role-cycle.js" is:inline></script>
+<script src="/scripts/counters.js" is:inline></script>
