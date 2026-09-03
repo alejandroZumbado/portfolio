@@ -23,6 +23,21 @@ const { project } = Astro.props;
       </span>
     ))}
   </div>
+  {project.levels && project.levels.length > 0 && (
+    <div class="flex flex-wrap items-center gap-1.5 pt-1">
+      <span class="text-[11px] font-bold uppercase tracking-wide text-[var(--text-soft)]">Niveles</span>
+      {project.levels.map((lvl) => (
+        <a
+          href={lvl.href}
+          target="_blank"
+          rel="noopener"
+          class="grid h-6 w-6 place-items-center rounded-full border border-[var(--border)] text-[11px] font-bold text-[var(--text-soft)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+        >
+          {lvl.label}
+        </a>
+      ))}
+    </div>
+  )}
   {(project.demo || project.repo) && (
     <div class="mt-auto flex gap-4 pt-1">
       {project.demo && (

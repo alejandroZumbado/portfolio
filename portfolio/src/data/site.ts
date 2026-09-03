@@ -18,7 +18,7 @@ export const profile = {
   github: "https://github.com/alejandroZumbado",
   linkedin: "https://www.linkedin.com/in/alejandro-zumbado-4124661ab/",
   about:
-    "Ingeniero en Computación (TEC, 2019) con más de 4 años construyendo productos de extremo a extremo: sitios y aplicaciones web, experiencias de realidad virtual, y videojuegos multijugador. Trabajo en Opal Interactive desarrollando proyectos de clientes (simuladores XR, apps de kiosco/AR, avatares con IA), y en paralelo diseño, desarrollo y publico mis propios productos — un pipeline de noticias con IA, videojuegos multijugador, y un paquete de networking para Unity — cubriendo todo el ciclo: diseño, código, despliegue y mantenimiento.",
+    "Ingeniero en Computación (TEC, 2019) con más de 4 años construyendo productos de extremo a extremo: sitios y aplicaciones web, experiencias de realidad virtual, y videojuegos multijugador. Actualmente desarrollo proyectos de clientes (simuladores XR, apps de kiosco/AR, avatares con IA), y en paralelo diseño, desarrollo y publico mis propios productos — un pipeline de noticias con IA, videojuegos multijugador, y un paquete de networking para Unity — cubriendo todo el ciclo: diseño, código, despliegue y mantenimiento.",
 };
 
 export const heroTags = ["Full Stack", "Videojuegos & VR", "Inteligencia Artificial", "Unity / C#"];
@@ -32,13 +32,22 @@ export const stats = [
 ];
 
 export const skillGroups: Record<string, string[]> = {
-  "Lenguajes": ["JavaScript", "TypeScript", "Python", "C#", "C/C++"],
-  "Frontend": ["React", "Next.js", "Astro", "Vue.js", "Three.js / WebGL", "A-Frame.js (VR web)", "HTML/CSS"],
-  "Backend": ["Node.js", "Express", "NestJS", "Django", "Laravel / PHP", "REST APIs"],
-  "Videojuegos / XR": ["Unity", "Netcode for GameObjects", "Unity Relay", "Shader Graph", "ARFoundation", "Meta Quest / XREAL"],
-  "Hardware / IoT": ["Raspberry Pi", "Python (control de dispositivos)"],
-  "IA": ["Integración de LLMs (Gemini)", "pipelines RAG", "IA de autojuego"],
-  "Herramientas": ["Git/GitHub", "GitHub Actions (CI/CD)", "Vercel", "Firebase", "Vitest"],
+  "Lenguajes": ["JavaScript", "TypeScript", "Python", "C#", "C/C++", "PHP", "SQL", "Java"],
+  "Frontend": ["React", "Next.js", "Astro", "Vue.js", "Three.js / WebGL", "A-Frame.js (VR web)", "HTML/CSS", "Tailwind CSS", "Framer Motion", "React Hook Form"],
+  "Backend": ["Node.js", "Express", "NestJS", "Django", "Laravel / PHP", "REST APIs", "FastAPI", "Prisma", "Supabase (PostgreSQL)"],
+  "Videojuegos / XR": ["Unity", "Netcode for GameObjects", "Unity Relay", "Photon", "Shader Graph", "ARFoundation", "WebXR", "Meta Quest / XREAL", "Android (build target)", "Empaquetado de assets Unity (UPM / Fab.com)", "GBDK / ZGB (Game Boy homebrew)"],
+  "Hardware / IoT": ["Raspberry Pi", "Python (control de dispositivos)", "GPIO / periféricos embebidos"],
+  "IA": [
+    "Integración de LLMs (Gemini, Claude, GPT)",
+    "pipelines RAG",
+    "LangChain / LlamaIndex",
+    "Bases de datos vectoriales (pgvector, Pinecone)",
+    "IA de autojuego (self-play)",
+    "Visión por computadora (detección facial)",
+    "Lipsync / animación facial",
+    "Automatización de contenido / fact-checking",
+  ],
+  "Herramientas": ["Git/GitHub", "GitHub Actions (CI/CD)", "Vercel", "GitHub Pages", "Heroku", "Firebase", "Vitest", "Zod", "pnpm", "Cron jobs / tareas programadas", "Chrome Extensions", "Asistentes de código IA (Claude Code, GitHub Copilot, Cursor)"],
 };
 
 export type ProjectCategory = "fullstack" | "ai" | "games" | "vr";
@@ -60,6 +69,7 @@ export interface Project {
   demo?: string | null;
   repo?: string | null;
   status?: string | null;
+  levels?: { label: string; href: string }[];
 }
 
 // Alejandro's OWN projects only — personal/indie (mostly under the "Mandrix"
@@ -154,7 +164,7 @@ export const projects: Project[] = [
     tech: ["Unity", "Meta Quest", "VR"],
     categories: ["vr", "games"],
     demo: null,
-    repo: "https://github.com/estkm/TibetanCalligraphyVRapp",
+    repo: null,
   },
   {
     name: "Giz (WOW Emotions)",
@@ -163,8 +173,16 @@ export const projects: Project[] = [
       "Experiencia web VR inmersiva de fauna y flora con más de 5 niveles, desarrollada para WOW Emotions.",
     tech: ["A-Frame.js", "WebXR", "Shaders"],
     categories: ["vr"],
-    demo: null,
+    demo: "https://menu-eight-peach.vercel.app",
     repo: "https://github.com/alejandroZumbado/Giz",
+    levels: [
+      { label: "1", href: "https://niv1.vercel.app" },
+      { label: "2", href: "https://niv2.vercel.app" },
+      { label: "3", href: "https://niv3.vercel.app" },
+      { label: "4", href: "https://niv4.vercel.app" },
+      { label: "5", href: "https://niv5.vercel.app" },
+      { label: "6", href: "https://niv6.vercel.app" },
+    ],
   },
 ];
 
