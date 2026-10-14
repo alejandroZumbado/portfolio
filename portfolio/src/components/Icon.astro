@@ -1,0 +1,15 @@
+---
+// Renders one icon from src/data/icons.ts; decorative by default (aria-hidden).
+import { icons, type IconName } from "../data/icons";
+
+interface Props {
+  name: IconName;
+  size?: number;
+  class?: string;
+}
+const { name, size = 16, class: className } = Astro.props;
+---
+
+<svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class={className}>
+  <path d={icons[name]} />
+</svg>

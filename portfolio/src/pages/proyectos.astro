@@ -1,34 +1,35 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import PageHeader from "../components/PageHeader.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import { projects, projectCategories } from "../data/site";
+
+// How many projects each filter shows (badge on the filter buttons)
+const countFor = (id: string) =>
+  id === "all" ? projects.length : projects.filter((p) => p.categories.includes(id as never)).length;
 ---
 
 <Layout title="Proyectos" description="Proyectos personales, freelance y de videojuegos de Alejandro Zumbado.">
   <section class="mx-auto max-w-5xl px-6 py-14">
-    <div data-reveal>
-      <h1 class="font-display text-3xl font-extrabold">Proyectos</h1>
-      <p class="mt-2 text-[14.5px] text-[var(--text-soft)]">
-        Selección de proyectos personales, freelance y de juegos. Filtra por área.
-      </p>
-    </div>
+    <PageHeader eyebrow="01 · Portafolio" title="Proyectos" subtitle="Selección de proyectos personales, freelance y de juegos. Filtra por área." />
 
     <div class="mt-6 flex flex-wrap gap-2" id="filter-row" data-reveal>
       {projectCategories.map((c, i) => (
         <button
           data-filter={c.id}
           aria-pressed={i === 0 ? "true" : "false"}
-          class="rounded-full border border-[var(--border)] px-4 py-1.5 text-[13px] font-bold text-[var(--text-soft)] transition-colors aria-[pressed=true]:border-[var(--accent)] aria-[pressed=true]:bg-[var(--accent)] aria-[pressed=true]:text-[var(--accent-on)]"
+          class="rounded-full border border-[var(--border)] px-4 py-1.5 text-[13px] font-bold text-[var(--text-soft)] transition hover:border-[var(--accent)] active:scale-95 aria-[pressed=true]:border-[var(--accent)] aria-[pressed=true]:bg-[var(--accent)] aria-[pressed=true]:text-[var(--accent-on)]"
         >
           {c.label}
+          <span class="ml-1 text-[11px] opacity-70">{countFor(c.id)}</span>
         </button>
       ))}
     </div>
 
     <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3" id="project-grid">
       {projects.map((p, i) => (
-        <div data-reveal style={`transition-delay:${(i % 6) * 70}ms`}>
-          <ProjectCard project={p} />
+        <div class="h-full" data-reveal style={`transition-delay:${(i % 6) * 70}ms`}>
+          <ProjectCard project={p} headingLevel="h2" />
         </div>
       ))}
     </div>

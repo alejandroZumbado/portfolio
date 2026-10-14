@@ -1,0 +1,23 @@
+---
+// Shared title block for inner pages (replaces the h1+subtitle markup that
+// was copy-pasted in every page). Animates in on load like the home hero.
+interface Props {
+  eyebrow: string;   // small label above the title, e.g. "02 · Trayectoria"
+  title: string;
+  subtitle?: string;
+}
+const { eyebrow, title, subtitle } = Astro.props;
+---
+
+<div>
+  <p class="hero-in text-[12px] font-bold uppercase tracking-[0.18em] text-[var(--accent)]" style="--d:0ms">
+    {eyebrow}
+  </p>
+  <h1 class="hero-in mt-2 font-display text-3xl font-extrabold sm:text-4xl" style="--d:80ms">{title}</h1>
+  <!-- Accent bar that grows from the left (.title-bar in global.css) -->
+  <span class="title-bar mt-3 block h-1 w-14 rounded-full" aria-hidden="true"></span>
+  {subtitle && (
+    <p class="hero-in mt-3 max-w-2xl text-[14.5px] text-[var(--text-soft)]" style="--d:160ms">{subtitle}</p>
+  )}
+  <slot />
+</div>

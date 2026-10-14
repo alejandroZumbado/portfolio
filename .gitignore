@@ -21,3 +21,5 @@ Thumbs.db
 # Claude Code session notes — private, not meant for a public repo
 # (CLAUDE.md at the root stays committed; this is the deeper/candid stuff)
 .claude/
+
+INIT.md

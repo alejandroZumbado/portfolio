@@ -7,7 +7,8 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://alejandrozumbado.dev',
-  prefetch: true,
+  // Prefetch any internal page on hover/focus so clicks feel instant
+  prefetch: { prefetchAll: true, defaultStrategy: 'hover' },
 
   vite: {
     plugins: [tailwindcss()],

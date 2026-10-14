@@ -1,10 +1,43 @@
 ---
 import { profile } from "../data/site";
+
+import Icon from "./Icon.astro";
+import type { IconName } from "../data/icons";
+
+// Icon links shown in the footer
+const socials: { label: string; href: string; icon: IconName }[] = [
+  { label: "GitHub", href: profile.github, icon: "github" },
+  { label: "LinkedIn", href: profile.linkedin, icon: "linkedin" },
+  { label: "Correo", href: `mailto:${profile.email}`, icon: "mail" },
+];
 ---
 
 <footer class="border-t border-[var(--border)] py-8">
-  <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-6 text-[13px] text-[var(--text-soft)]">
-    <span>© {new Date().getFullYear()} {profile.name}</span>
-    <span>{profile.location}</span>
+  <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 px-6 text-[13px] text-[var(--text-soft)]">
+    <div>
+      <span class="block font-semibold text-[var(--text)]">© {new Date().getFullYear()} {profile.name}</span>
+      <span>{profile.location}</span>
+    </div>
+    <div class="flex items-center gap-2">
+      {socials.map((s) => (
+        <a
+          href={s.href}
+          target={s.href.startsWith("http") ? "_blank" : undefined}
+          rel={s.href.startsWith("http") ? "me noopener" : undefined}
+          aria-label={s.label}
+          class="grid h-9 w-9 place-items-center rounded-full border border-[var(--border)] transition hover:-translate-y-0.5 hover:border-[var(--accent)] hover:text-[var(--accent)]"
+        >
+          <Icon name={s.icon} />
+        </a>
+      ))}
+      <!-- Back to top: plain anchor, smooth via html { scroll-behavior } -->
+      <a
+        href="#main"
+        aria-label="Volver arriba"
+        class="ml-1 grid h-9 w-9 place-items-center rounded-full bg-[var(--accent-soft)] text-[var(--accent)] transition hover:-translate-y-1"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6" /></svg>
+      </a>
+    </div>
   </div>
 </footer>

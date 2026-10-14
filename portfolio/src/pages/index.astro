@@ -9,56 +9,69 @@ import { Image } from "astro:assets";
 const featured = projects.slice(0, 3);
 ---
 
-<Layout title="Inicio" description={profile.about}>
-  <section class="relative mx-auto max-w-5xl overflow-hidden px-6 pb-10 pt-16 sm:pt-24">
+<Layout title="Inicio" description="Alejandro Zumbado Vargas — Ingeniero en Computación (TEC). Full Stack, videojuegos multijugador y VR. Proyectos, experiencia y CVs.">
+  <!-- Full-bleed hero so the aurora fades into the page instead of ending in a box -->
+  <section class="relative overflow-hidden">
     <div class="aurora" aria-hidden="true"></div>
-    <div class="relative z-10 grid items-center gap-10 sm:grid-cols-[auto_1fr]">
-      <Image
-        src={avatar}
-        alt={profile.name}
-        width={168}
-        height={168}
-        class="avatar-morph mx-auto h-36 w-36 rounded-3xl border border-[var(--border)] object-cover sm:h-42 sm:w-42"
-      />
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="relative z-10 mx-auto grid max-w-5xl items-center gap-10 px-6 pb-14 pt-14 sm:grid-cols-[auto_1fr] sm:pt-24">
+      <div class="avatar-wrap hero-in mx-auto w-fit" style="--d:0ms">
+        <!-- fit="cover" + position="top": crops the 406x432 photo to a square
+             instead of squashing it (Astro's default stretched it wide).
+             densities 2x keeps it sharp on retina/phone screens. -->
+        <Image
+          src={avatar}
+          alt={profile.name}
+          width={168}
+          height={168}
+          densities={[1, 2]}
+          fit="cover"
+          position="top"
+          loading="eager"
+          fetchpriority="high"
+          class="avatar-morph h-36 w-36 object-cover object-top sm:h-42 sm:w-42"
+        />
+      </div>
       <div class="text-center sm:text-left">
-        <h1 class="font-display text-4xl font-extrabold tracking-tight sm:text-5xl">
-          {profile.name}
+        <h1 class="hero-in font-display text-4xl font-extrabold tracking-tight sm:text-5xl" style="--d:90ms">
+          <span class="text-shimmer">{profile.name}</span>
         </h1>
-        <p
-          class="mt-2 h-7 font-display text-lg font-semibold text-[var(--accent)]"
-          id="role-cycle"
-          data-roles={JSON.stringify(profile.roles)}
-        >
-          {profile.roles[0]}
+        <!-- min-h (not fixed h) so a long role can wrap on phones without overlapping -->
+        <p class="hero-in mt-2 min-h-7 font-display text-lg font-semibold text-[var(--accent)]" style="--d:180ms">
+          <span id="role-cycle" class="inline-block" data-roles={JSON.stringify(profile.roles)}>{profile.roles[0]}</span><span class="caret" aria-hidden="true"></span>
         </p>
-        <div class="mt-4 flex flex-wrap justify-center gap-2 sm:justify-start">
+        <div class="hero-in mt-4 flex flex-wrap justify-center gap-2 sm:justify-start" style="--d:270ms">
           {heroTags.map((t) => (
-            <span class="rounded-full bg-[var(--accent-soft)] px-3 py-1 text-[12.5px] font-bold text-[var(--accent)]">
+            <span class="rounded-full border border-[color-mix(in_srgb,var(--accent)_25%,transparent)] bg-[var(--accent-soft)] px-3 py-1 text-[12.5px] font-bold text-[var(--accent)] transition-transform hover:-translate-y-0.5">
               {t}
             </span>
           ))}
         </div>
-        <div class="mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
-          <a href="/cv" data-magnetic class="rounded-full bg-[var(--accent)] px-5 py-2.5 text-[14px] font-bold text-[var(--accent-on)] transition hover:brightness-110">
+        <div class="hero-in mt-6 flex flex-wrap justify-center gap-3 sm:justify-start" style="--d:360ms">
+          <a href="/cv" data-magnetic class="btn-shine rounded-full bg-[var(--accent)] px-5 py-2.5 text-[14px] font-bold text-[var(--accent-on)] transition hover:brightness-110">
             Descargar CV
           </a>
-          <a href="/proyectos" data-magnetic class="rounded-full border border-[var(--border)] px-5 py-2.5 text-[14px] font-bold transition hover:border-[var(--accent)]">
+          <a href="/proyectos" data-magnetic class="rounded-full border border-[var(--border)] bg-[var(--bg)]/40 px-5 py-2.5 text-[14px] font-bold backdrop-blur transition hover:border-[var(--accent)]">
             Ver proyectos
           </a>
-          <a href="/contacto" data-magnetic class="rounded-full border border-[var(--border)] px-5 py-2.5 text-[14px] font-bold transition hover:border-[var(--accent)]">
+          <a href="/contacto" data-magnetic class="rounded-full border border-[var(--border)] bg-[var(--bg)]/40 px-5 py-2.5 text-[14px] font-bold backdrop-blur transition hover:border-[var(--accent)]">
             Contacto
           </a>
         </div>
       </div>
     </div>
+    <!-- Scroll cue (desktop only; phones already show content below the fold) -->
+    <a href="#stats" class="scroll-cue relative z-10 mx-auto mb-2 hidden w-fit text-[var(--text-soft)] hover:text-[var(--accent)] sm:block" aria-label="Bajar al contenido">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
   </section>
 
-  <section class="mx-auto max-w-5xl px-6 py-6">
+  <section id="stats" class="mx-auto max-w-5xl scroll-mt-20 px-6 py-6">
     <StatsRow />
   </section>
 
   <section class="mx-auto max-w-5xl px-6 py-10" data-reveal>
-    <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-7">
+    <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-7" data-spotlight>
       <p class="text-[15px] leading-relaxed text-[var(--text-soft)]">{profile.about}</p>
     </div>
   </section>
@@ -69,14 +82,34 @@ const featured = projects.slice(0, 3);
         <h2 class="font-display text-2xl font-bold">Proyectos destacados</h2>
         <p class="mt-1 text-[14px] text-[var(--text-soft)]">Una muestra — el catálogo completo está en Proyectos.</p>
       </div>
-      <a href="/proyectos" class="hidden text-[13.5px] font-bold text-[var(--accent)] hover:underline sm:block">Ver todos →</a>
+      <a href="/proyectos" class="link-arrow hidden text-[13.5px] font-bold text-[var(--accent)] sm:inline-flex">Ver todos <span class="arr" aria-hidden="true">→</span></a>
     </div>
     <div class="grid gap-5 sm:grid-cols-3">
       {featured.map((p, i) => (
-        <div data-reveal style={`transition-delay:${i * 90}ms`}>
+        <div class="h-full" data-reveal style={`transition-delay:${i * 90}ms`}>
           <ProjectCard project={p} />
         </div>
       ))}
+    </div>
+  </section>
+  <!-- Closing CTA: gives visitors a clear next step after the projects -->
+  <section class="mx-auto max-w-5xl px-6 pb-16 pt-6" data-reveal>
+    <div class="relative overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface)] px-7 py-10 text-center sm:py-12">
+      <div class="aurora opacity-70" aria-hidden="true"></div>
+      <div class="relative z-10">
+        <h2 class="font-display text-2xl font-bold sm:text-3xl">¿Trabajamos juntos?</h2>
+        <p class="mx-auto mt-2 max-w-md text-[14.5px] text-[var(--text-soft)]">
+          Abierto a oportunidades full stack, videojuegos y VR.
+        </p>
+        <div class="mt-6 flex flex-wrap justify-center gap-3">
+          <a href="/contacto" data-magnetic class="btn-shine rounded-full bg-[var(--accent)] px-5 py-2.5 text-[14px] font-bold text-[var(--accent-on)] transition hover:brightness-110">
+            Contactarme
+          </a>
+          <a href="/cv" data-magnetic class="rounded-full border border-[var(--border)] px-5 py-2.5 text-[14px] font-bold transition hover:border-[var(--accent)]">
+            Ver CVs
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 </Layout>

@@ -1,9 +1,22 @@
 ---
 import { ClientRouter } from "astro:transitions";
+// Self-hosted variable fonts: no render-blocking request to Google,
+// no third-party font host in the CSP, and matches the "Inter Variable" /
+// "Outfit Variable" names already declared in global.css @theme.
+import "@fontsource-variable/inter";
+import "@fontsource-variable/outfit";
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { profile } from "../data/site";
+
+// Custom page-change animation for <main>: old page fades up and out,
+// new page rises in. Keyframes live in global.css.
+const pageAnim = {
+  old: { name: "page-out", duration: "0.18s", easing: "ease-in", fillMode: "both" },
+  new: { name: "page-in", duration: "0.45s", easing: "cubic-bezier(.2,.7,.2,1)", fillMode: "both" },
+};
+const pageTransition = { forwards: pageAnim, backwards: pageAnim };
 
 interface Props {
   title: string;
@@ -59,7 +72,9 @@ const websiteJsonLd = {
     <link rel="manifest" href="/manifest.json" />
     <link rel="me" href={profile.github} />
     <link rel="me" href={profile.linkedin} />
-    <meta name="theme-color" content="#14120f" />
+    <!-- Browser UI color follows the OS theme -->
+    <meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#14120f" media="(prefers-color-scheme: dark)" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={pageTitle} />
@@ -75,12 +90,6 @@ const websiteJsonLd = {
     <script type="application/ld+json" set:html={JSON.stringify(personJsonLd)} is:inline />
     <script type="application/ld+json" set:html={JSON.stringify(websiteJsonLd)} is:inline />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <ClientRouter />
     <script is:inline>
       // Runs before paint to avoid a flash of the wrong theme.
@@ -89,7 +98,7 @@ const websiteJsonLd = {
       document.documentElement.setAttribute("data-theme", theme);
     </script>
   </head>
-  <body class="min-h-screen font-sans">
+  <body class="flex min-h-screen flex-col font-sans">
     <a
       href="#main"
       class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-50 focus:rounded-full focus:bg-[var(--accent)] focus:px-4 focus:py-2 focus:text-[13px] focus:font-bold focus:text-[var(--accent-on)]"
@@ -97,11 +106,14 @@ const websiteJsonLd = {
       Saltar al contenido
     </a>
     <Header />
-    <main id="main">
+    <!-- Fallback: without JS, reveal-on-scroll content must still be visible -->
+    <noscript><style>[data-reveal]{opacity:1!important;translate:none!important;scale:none!important;filter:none!important}</style></noscript>
+    <main id="main" class="flex-1" transition:animate={pageTransition}>
       <slot />
     </main>
     <Footer />
     <script src="/scripts/reveal.js" is:inline></script>
+    <script src="/scripts/spotlight.js" is:inline></script>
   </body>
 </html>
 

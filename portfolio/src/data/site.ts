@@ -27,7 +27,7 @@ export const heroTags = ["Full Stack", "Videojuegos & VR", "Inteligencia Artific
 // Interactive experience entry — don't hand-tune these without recounting.
 export const stats = [
   { value: 4, suffix: "+", label: "Años de experiencia" },
-  { value: 16, suffix: "", label: "Proyectos" },
+  { value: 16, suffix: "", label: "Proyectos (propios + clientes)" },
   { value: 2, suffix: "", label: "Idiomas" },
 ];
 

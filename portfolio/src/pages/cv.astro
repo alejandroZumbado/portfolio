@@ -1,36 +1,37 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import PageHeader from "../components/PageHeader.astro";
 import { cvIndex } from "../data/site";
 ---
 
 <Layout title="CVs" description="Descarga el CV de Alejandro Zumbado por área e idioma.">
   <section class="mx-auto max-w-4xl px-6 py-14">
-    <div data-reveal>
-      <h1 class="font-display text-3xl font-extrabold">Descargar CV</h1>
-      <p class="mt-2 text-[14.5px] text-[var(--text-soft)]">
-        CVs por área e idioma, en HTML y PDF.
-      </p>
-    </div>
+    <PageHeader eyebrow="04 · Documentos" title="Descargar CV" subtitle="CVs por área e idioma, en HTML y PDF." />
 
     <div class="mt-8 grid gap-3 sm:grid-cols-2">
       {cvIndex.map((c, i) => (
         <div
-          class="rounded-xl border border-[var(--border)] bg-[var(--surface)] px-5 py-4 transition-all hover:border-[var(--accent)]"
+          class="rounded-xl border border-[var(--border)] bg-[var(--surface)] px-5 py-4"
+          data-spotlight
           data-reveal
           style={`transition-delay:${(i % 6) * 60}ms`}
         >
           <div class="flex items-center justify-between">
-            <span class="font-display text-[14px] font-bold">{c.label}</span>
+            <span class="flex items-center gap-2 font-display text-[14px] font-bold">
+              <span class="grid h-8 w-8 place-items-center rounded-lg bg-[var(--accent-soft)] text-[15px]" aria-hidden="true">📄</span>
+              {c.label}
+            </span>
             <span class="rounded-md bg-[var(--accent-soft)] px-2 py-0.5 text-[11px] font-bold text-[var(--accent)]">
               {c.lang}
             </span>
           </div>
-          <div class="mt-3 flex gap-4">
-            <a href={c.pdfHref} target="_blank" rel="noopener" class="text-[12.5px] font-bold text-[var(--accent)] hover:underline">
-              PDF →
+          <div class="mt-3 flex items-center gap-4">
+            <a href={c.pdfHref} target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 rounded-full bg-[var(--accent)] px-3.5 py-1.5 text-[12.5px] font-bold text-[var(--accent-on)] transition hover:brightness-110 active:scale-95">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14" /></svg>
+              PDF
             </a>
-            <a href={c.href} target="_blank" rel="noopener" class="text-[12.5px] font-bold text-[var(--text-soft)] hover:underline">
-              Ver en HTML →
+            <a href={c.href} target="_blank" rel="noopener" class="link-arrow text-[12.5px] font-bold text-[var(--text-soft)] hover:text-[var(--text)]">
+              Ver en HTML <span class="arr" aria-hidden="true">→</span>
             </a>
           </div>
         </div>

@@ -5,10 +5,22 @@ function applyStoredTheme() {
   document.documentElement.setAttribute("data-theme", theme);
 }
 
+// Icon visibility is pure CSS now (keyed on html[data-theme]); this only
+// keeps the button's accessible state in sync.
 function syncIcon() {
-  const icon = document.getElementById("theme-icon");
+  const btn = document.getElementById("theme-toggle");
   const current = document.documentElement.getAttribute("data-theme") || "light";
-  if (icon) icon.textContent = current === "dark" ? "☀️" : "🌙";
+  btn?.setAttribute("aria-pressed", String(current === "dark"));
+}
+
+// Small spin/pop on the icon so the theme switch feels responsive
+function spinIcon() {
+  const icon = document.getElementById("theme-icon");
+  if (!icon || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  icon.animate(
+    [{ transform: "rotate(-120deg) scale(.4)", opacity: 0 }, { transform: "rotate(0) scale(1)", opacity: 1 }],
+    { duration: 420, easing: "cubic-bezier(.2,.7,.2,1)" }
+  );
 }
 
 function initThemeToggle() {
@@ -24,6 +36,7 @@ function initThemeToggle() {
     document.documentElement.setAttribute("data-theme", next);
     try { localStorage.setItem("theme", next); } catch {}
     syncIcon();
+    spinIcon();
   });
 }
 

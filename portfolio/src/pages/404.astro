@@ -3,8 +3,10 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Página no encontrada" description="Esta página no existe.">
-  <section class="mx-auto max-w-2xl px-6 py-24 text-center">
-    <p class="font-display text-6xl font-extrabold text-[var(--accent)]">404</p>
+  <section class="relative overflow-hidden">
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="relative z-10 mx-auto max-w-2xl px-6 py-24 text-center">
+    <p class="float-slow hero-in font-display text-8xl font-extrabold"><span class="text-shimmer">404</span></p>
     <h1 class="mt-3 font-display text-2xl font-bold">No encontré esta página</h1>
     <p class="mt-2 text-[14.5px] text-[var(--text-soft)]">
       El enlace puede estar roto o la página se movió.
@@ -17,5 +19,6 @@ import Layout from "../layouts/Layout.astro";
         Ver proyectos
       </a>
     </div>
+  </div>
   </section>
 </Layout>
