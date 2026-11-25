@@ -4,7 +4,7 @@
 Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado | linkedin.com/in/alejandro-zumbado-4124661ab
 
 ## Perfil
-Ingeniero en Computación (TEC, 2019) con más de 4 años de experiencia construyendo productos web de extremo a extremo: frontend en React/Next.js, backend en Django/Node.js, APIs REST e integraciones con IA (LLMs). Actualmente en Opal Interactive, desarrollando proyectos para distintos clientes (simuladores XR, apps de kiosco/AR, avatares con IA). En paralelo, diseño y publico mis propios productos — un pipeline de contenido automatizado con IA (newspulse.dev) y videojuegos multijugador publicados en WebGL — cubriendo diseño, desarrollo, despliegue (CI/CD) y mantenimiento.
+Desarrollador autodidacta con más de 4 años de experiencia construyendo productos web de extremo a extremo: frontend en React/Next.js, backend en Django/Node.js, APIs REST e integraciones con IA (LLMs). Actualmente en Opal Interactive, desarrollando proyectos para distintos clientes (simuladores XR, apps de kiosco/AR, avatares con IA). En paralelo, diseño y publico mis propios productos — un pipeline de contenido automatizado con IA (newspulse.dev) y videojuegos multijugador publicados en WebGL — cubriendo diseño, desarrollo, despliegue (CI/CD) y mantenimiento.
 
 ## Habilidades
 - **Lenguajes:** JavaScript, TypeScript, Python, C#
@@ -61,7 +61,6 @@ _Sistema de recolección de feedback de clientes_
 - Backend con Supabase, validación con Zod y React Hook Form, animaciones con Framer Motion.
 
 ## Educación
-- **Ingeniería en Computación** — Tecnológico de Costa Rica (TEC) (2019)
 - **Bachillerato / Educación Secundaria** — Liceo San Rafael de Alajuela (2015)
 
 ## Idiomas

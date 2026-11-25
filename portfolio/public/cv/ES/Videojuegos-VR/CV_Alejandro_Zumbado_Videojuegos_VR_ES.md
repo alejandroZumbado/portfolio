@@ -4,7 +4,7 @@
 Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado | linkedin.com/in/alejandro-zumbado-4124661ab
 
 ## Perfil
-Ingeniero en Computación (TEC, 2019) apasionado por el desarrollo de videojuegos desde competiciones de programación y diseño de juegos hasta productos publicados. Experiencia en Unity/C# (2D y 3D), networking multijugador (Netcode for GameObjects + Relay), XR para Meta Quest y XREAL, generación procedural de niveles y hasta desarrollo homebrew para Game Boy. Actualmente en Opal Interactive desarrollando simuladores XR y apps de kiosco/AR para clientes; en paralelo publico mis propios juegos y empaqueto mi propia capa de networking como producto independiente.
+Desarrollador autodidacta apasionado por el desarrollo de videojuegos desde competiciones de programación y diseño de juegos hasta productos publicados. Experiencia en Unity/C# (2D y 3D), networking multijugador (Netcode for GameObjects + Relay), XR para Meta Quest y XREAL, generación procedural de niveles y hasta desarrollo homebrew para Game Boy. Actualmente en Opal Interactive desarrollando simuladores XR y apps de kiosco/AR para clientes; en paralelo publico mis propios juegos y empaqueto mi propia capa de networking como producto independiente.
 
 ## Habilidades
 - **Motor / Lenguajes:** Unity, C#, Shader Graph / ShaderLab, Python (IA de juego)
@@ -59,7 +59,6 @@ _Desarrollo homebrew en C para Game Boy (toolchain ZGB)_
 - Desarrollo de un juego para hardware real de Game Boy en C, trabajando dentro de las restricciones de memoria y procesamiento del hardware original.
 
 ## Educación
-- **Ingeniería en Computación** — Tecnológico de Costa Rica (TEC) (2019)
 - **Bachillerato / Educación Secundaria** — Liceo San Rafael de Alajuela (2015)
 
 ## Idiomas

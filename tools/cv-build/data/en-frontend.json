@@ -17,7 +17,7 @@
     "education": "Education",
     "languages": "Languages"
   },
-  "summary": "Computer Engineer (TEC, 2019) specialized in React interfaces and interactive 3D/WebGL experiences. 4+ years building responsive UIs, reusable components, and immersive experiences (web VR, real-time interactive avatars). Currently at Opal Interactive, building the interface for an AI avatar and kiosk/AR apps for studio clients. Careful about performance and visual consistency across browsers and devices.",
+  "summary": "Self-taught developer specialized in React interfaces and interactive 3D/WebGL experiences. 4+ years building responsive UIs, reusable components, and immersive experiences (web VR, real-time interactive avatars). Currently at Opal Interactive, building the interface for an AI avatar and kiosk/AR apps for studio clients. Careful about performance and visual consistency across browsers and devices.",
   "skills": {
     "Frontend": [
       "React",
@@ -130,11 +130,6 @@
     }
   ],
   "education": [
-    {
-      "degree": "Computer Engineering",
-      "place": "Tecnológico de Costa Rica (TEC)",
-      "date": "2019"
-    },
     {
       "degree": "High School Diploma",
       "place": "Liceo San Rafael de Alajuela",

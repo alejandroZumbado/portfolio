@@ -17,7 +17,7 @@
     "education": "Educación",
     "languages": "Idiomas"
   },
-  "summary": "Ingeniero en Computación (TEC, 2019) especializado en interfaces web con React y experiencias interactivas 3D/WebGL. Más de 4 años construyendo UI responsivas, componentes reutilizables y experiencias inmersivas (VR web, avatares interactivos en tiempo real). Actualmente en Opal Interactive, construyendo la interfaz de un avatar con IA y apps de kiosco/AR para clientes del estudio. Cuidadoso con el rendimiento y la consistencia visual entre navegadores y dispositivos.",
+  "summary": "Desarrollador autodidacta especializado en interfaces web con React y experiencias interactivas 3D/WebGL. Más de 4 años construyendo UI responsivas, componentes reutilizables y experiencias inmersivas (VR web, avatares interactivos en tiempo real). Actualmente en Opal Interactive, construyendo la interfaz de un avatar con IA y apps de kiosco/AR para clientes del estudio. Cuidadoso con el rendimiento y la consistencia visual entre navegadores y dispositivos.",
   "skills": {
     "Frontend": [
       "React",
@@ -130,11 +130,6 @@
     }
   ],
   "education": [
-    {
-      "degree": "Ingeniería en Computación",
-      "place": "Tecnológico de Costa Rica (TEC)",
-      "date": "2019"
-    },
     {
       "degree": "Bachillerato / Educación Secundaria",
       "place": "Liceo San Rafael de Alajuela",

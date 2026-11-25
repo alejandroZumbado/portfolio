@@ -4,7 +4,7 @@
 Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado | linkedin.com/in/alejandro-zumbado-4124661ab
 
 ## Summary
-Computer Engineer (TEC, 2019) with 4+ years building end-to-end web products: React/Next.js frontends, Django/Node.js backends, REST APIs, and LLM integrations. Currently at Opal Interactive, building projects for various clients (XR simulators, kiosk/AR apps, AI avatars). In parallel, I design and ship my own products — an AI-driven autonomous content pipeline (newspulse.dev) and published multiplayer WebGL games — owning design, development, deployment (CI/CD), and maintenance.
+Self-taught developer with 4+ years building end-to-end web products: React/Next.js frontends, Django/Node.js backends, REST APIs, and LLM integrations. Currently at Opal Interactive, building projects for various clients (XR simulators, kiosk/AR apps, AI avatars). In parallel, I design and ship my own products — an AI-driven autonomous content pipeline (newspulse.dev) and published multiplayer WebGL games — owning design, development, deployment (CI/CD), and maintenance.
 
 ## Skills
 - **Languages:** JavaScript, TypeScript, Python, C#
@@ -61,7 +61,6 @@ _Customer feedback collection system_
 - Backend with Supabase, validation with Zod and React Hook Form, animations with Framer Motion.
 
 ## Education
-- **Computer Engineering** — Tecnológico de Costa Rica (TEC) (2019)
 - **High School Diploma** — Liceo San Rafael de Alajuela (2015)
 
 ## Languages

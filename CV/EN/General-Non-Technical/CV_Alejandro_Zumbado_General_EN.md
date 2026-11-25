@@ -4,7 +4,7 @@
 Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado | linkedin.com/in/alejandro-zumbado-4124661ab
 
 ## About Me
-I'm a Computer Engineer graduated from Tecnológico de Costa Rica, with over 4 years building websites, apps, and video games for companies and my own projects. I currently work at a development studio that takes on projects from different companies, building everything from training simulators to AI-powered virtual characters. In my own time, I've also built a news site that updates itself every day and several video games that anyone can play online today. I learn quickly, adapt well to different teams and clients, and I like finishing what I start.
+I'm a self-taught developer with over 4 years building websites, apps, and video games for companies and my own projects. I currently work at a development studio that takes on projects from different companies, building everything from training simulators to AI-powered virtual characters. In my own time, I've also built a news site that updates itself every day and several video games that anyone can play online today. I learn quickly, adapt well to different teams and clients, and I like finishing what I start.
 
 ## Areas of Work
 - **Web development:** Websites and browser applications, Clear, easy-to-use interfaces, Working with design teams
@@ -49,7 +49,6 @@ _A system for collecting customer opinions_
 - Built an app where customers can rate and upload photos of custom 3D-printed figures they bought, with a panel to see all the feedback.
 
 ## Education
-- **Computer Engineering** — Tecnológico de Costa Rica (TEC) (2019)
 - **High School Diploma** — Liceo San Rafael de Alajuela (2015)
 
 ## Languages

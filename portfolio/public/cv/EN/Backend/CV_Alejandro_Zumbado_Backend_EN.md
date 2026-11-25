@@ -4,7 +4,7 @@
 Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado | linkedin.com/in/alejandro-zumbado-4124661ab
 
 ## Summary
-Computer Engineer (TEC, 2019) with experience in Django and Node.js building REST APIs, integrations, and server-side logic for web and VR products. Currently at Opal Interactive, contributing to Startus's NestJS backend and the server logic for an AI avatar. In parallel, I design and operate my own backend systems in production: an AI content pipeline that runs with zero human intervention, and multiplayer networking layers for games (Unity Netcode + Relay).
+Self-taught developer with experience in Django and Node.js building REST APIs, integrations, and server-side logic for web and VR products. Currently at Opal Interactive, contributing to Startus's NestJS backend and the server logic for an AI avatar. In parallel, I design and operate my own backend systems in production: an AI content pipeline that runs with zero human intervention, and multiplayer networking layers for games (Unity Netcode + Relay).
 
 ## Skills
 - **Backend:** Django, Node.js, Express, NestJS, REST APIs, Python
@@ -52,7 +52,6 @@ _Supabase backend_
 - Data validation with Zod, admin panel, and feedback export in JSON format.
 
 ## Education
-- **Computer Engineering** — Tecnológico de Costa Rica (TEC) (2019)
 - **High School Diploma** — Liceo San Rafael de Alajuela (2015)
 
 ## Languages

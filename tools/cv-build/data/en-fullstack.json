@@ -17,7 +17,7 @@
     "education": "Education",
     "languages": "Languages"
   },
-  "summary": "Computer Engineer (TEC, 2019) with 4+ years building end-to-end web products: React/Next.js frontends, Django/Node.js backends, REST APIs, and LLM integrations. Currently at Opal Interactive, building projects for various clients (XR simulators, kiosk/AR apps, AI avatars). In parallel, I design and ship my own products — an AI-driven autonomous content pipeline (newspulse.dev) and published multiplayer WebGL games — owning design, development, deployment (CI/CD), and maintenance.",
+  "summary": "Self-taught developer with 4+ years building end-to-end web products: React/Next.js frontends, Django/Node.js backends, REST APIs, and LLM integrations. Currently at Opal Interactive, building projects for various clients (XR simulators, kiosk/AR apps, AI avatars). In parallel, I design and ship my own products — an AI-driven autonomous content pipeline (newspulse.dev) and published multiplayer WebGL games — owning design, development, deployment (CI/CD), and maintenance.",
   "skills": {
     "Languages": [
       "JavaScript",
@@ -148,11 +148,6 @@
     }
   ],
   "education": [
-    {
-      "degree": "Computer Engineering",
-      "place": "Tecnológico de Costa Rica (TEC)",
-      "date": "2019"
-    },
     {
       "degree": "High School Diploma",
       "place": "Liceo San Rafael de Alajuela",

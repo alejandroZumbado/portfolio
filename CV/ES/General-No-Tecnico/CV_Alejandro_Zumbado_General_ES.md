@@ -4,7 +4,7 @@
 Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado | linkedin.com/in/alejandro-zumbado-4124661ab
 
 ## Sobre mí
-Soy Ingeniero en Computación graduado del Tecnológico de Costa Rica, con más de 4 años construyendo sitios web, aplicaciones y videojuegos para empresas y proyectos propios. Actualmente trabajo en un estudio de desarrollo que recibe proyectos de distintas empresas, creando desde simuladores de entrenamiento hasta personajes virtuales con inteligencia artificial. Además, en mi tiempo propio, he creado un sitio de noticias que se actualiza solo todos los días y varios videojuegos que la gente puede jugar hoy en internet. Soy una persona que aprende rápido, se adapta a equipos y clientes distintos, y le gusta terminar lo que empieza.
+Soy desarrollador autodidacta, con más de 4 años construyendo sitios web, aplicaciones y videojuegos para empresas y proyectos propios. Actualmente trabajo en un estudio de desarrollo que recibe proyectos de distintas empresas, creando desde simuladores de entrenamiento hasta personajes virtuales con inteligencia artificial. Además, en mi tiempo propio, he creado un sitio de noticias que se actualiza solo todos los días y varios videojuegos que la gente puede jugar hoy en internet. Soy una persona que aprende rápido, se adapta a equipos y clientes distintos, y le gusta terminar lo que empieza.
 
 ## Áreas de trabajo
 - **Desarrollo web:** Sitios y aplicaciones para navegador, Interfaces claras y fáciles de usar, Trabajo con equipos de diseño
@@ -49,7 +49,6 @@ _Sistema para recolectar opiniones de clientes_
 - Creé una aplicación donde los clientes pueden calificar y subir fotos de figuras 3D personalizadas que compraron, con un panel para ver todos los comentarios.
 
 ## Educación
-- **Ingeniería en Computación** — Tecnológico de Costa Rica (TEC) (2019)
 - **Bachillerato / Educación Secundaria** — Liceo San Rafael de Alajuela (2015)
 
 ## Idiomas

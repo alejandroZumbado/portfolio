@@ -17,7 +17,7 @@
     "education": "Education",
     "languages": "Languages"
   },
-  "summary": "Computer Engineer (TEC, 2019) with experience in Django and Node.js building REST APIs, integrations, and server-side logic for web and VR products. Currently at Opal Interactive, contributing to Startus's NestJS backend and the server logic for an AI avatar. In parallel, I design and operate my own backend systems in production: an AI content pipeline that runs with zero human intervention, and multiplayer networking layers for games (Unity Netcode + Relay).",
+  "summary": "Self-taught developer with experience in Django and Node.js building REST APIs, integrations, and server-side logic for web and VR products. Currently at Opal Interactive, contributing to Startus's NestJS backend and the server logic for an AI avatar. In parallel, I design and operate my own backend systems in production: an AI content pipeline that runs with zero human intervention, and multiplayer networking layers for games (Unity Netcode + Relay).",
   "skills": {
     "Backend": [
       "Django",
@@ -126,11 +126,6 @@
     }
   ],
   "education": [
-    {
-      "degree": "Computer Engineering",
-      "place": "Tecnológico de Costa Rica (TEC)",
-      "date": "2019"
-    },
     {
       "degree": "High School Diploma",
       "place": "Liceo San Rafael de Alajuela",

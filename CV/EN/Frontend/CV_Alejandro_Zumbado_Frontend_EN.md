@@ -4,7 +4,7 @@
 Poás, Alajuela, Costa Rica | +506 6022-1640 | aazv.ale@gmail.com | github.com/alejandroZumbado | linkedin.com/in/alejandro-zumbado-4124661ab
 
 ## Summary
-Computer Engineer (TEC, 2019) specialized in React interfaces and interactive 3D/WebGL experiences. 4+ years building responsive UIs, reusable components, and immersive experiences (web VR, real-time interactive avatars). Currently at Opal Interactive, building the interface for an AI avatar and kiosk/AR apps for studio clients. Careful about performance and visual consistency across browsers and devices.
+Self-taught developer specialized in React interfaces and interactive 3D/WebGL experiences. 4+ years building responsive UIs, reusable components, and immersive experiences (web VR, real-time interactive avatars). Currently at Opal Interactive, building the interface for an AI avatar and kiosk/AR apps for studio clients. Careful about performance and visual consistency across browsers and devices.
 
 ## Skills
 - **Frontend:** React, Next.js, Astro, HTML, CSS, TypeScript, JavaScript
@@ -53,7 +53,6 @@ _Next.js 15 · React 19_
 - Animated star-rating interface (Framer Motion), drag & drop photo upload, light/dark theme, responsive design.
 
 ## Education
-- **Computer Engineering** — Tecnológico de Costa Rica (TEC) (2019)
 - **High School Diploma** — Liceo San Rafael de Alajuela (2015)
 
 ## Languages

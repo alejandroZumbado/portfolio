@@ -18,7 +18,7 @@ export const profile = {
   github: "https://github.com/alejandroZumbado",
   linkedin: "https://www.linkedin.com/in/alejandro-zumbado-4124661ab/",
   about:
-    "Ingeniero en Computación (TEC, 2019) con más de 4 años construyendo productos de extremo a extremo: sitios y aplicaciones web, experiencias de realidad virtual, y videojuegos multijugador. Actualmente desarrollo proyectos de clientes (simuladores XR, apps de kiosco/AR, avatares con IA), y en paralelo diseño, desarrollo y publico mis propios productos — un pipeline de noticias con IA, videojuegos multijugador, y un paquete de networking para Unity — cubriendo todo el ciclo: diseño, código, despliegue y mantenimiento.",
+    "Desarrollador autodidacta con más de 4 años construyendo productos de extremo a extremo: sitios y aplicaciones web, experiencias de realidad virtual, y videojuegos multijugador. Actualmente desarrollo proyectos de clientes (simuladores XR, apps de kiosco/AR, avatares con IA), y en paralelo diseño, desarrollo y publico mis propios productos — un pipeline de noticias con IA, videojuegos multijugador, y un paquete de networking para Unity — cubriendo todo el ciclo: diseño, código, despliegue y mantenimiento.",
 };
 
 export const heroTags = ["Full Stack", "Videojuegos & VR", "Inteligencia Artificial", "Unity / C#"];
@@ -254,13 +254,6 @@ export const experience: TimelineEntry[] = [
     bullets: [
       "Desarrollo y optimización de funcionalidades web con JavaScript y Django sobre sistemas legados.",
     ],
-  },
-  {
-    role: "Ingeniería en Computación",
-    company: "Tecnológico de Costa Rica (TEC)",
-    dates: "2019",
-    sub: "Educación",
-    bullets: [],
   },
 ];
 
