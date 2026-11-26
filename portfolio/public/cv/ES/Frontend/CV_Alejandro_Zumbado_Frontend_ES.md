@@ -53,6 +53,7 @@ _Next.js 15 · React 19_
 - Interfaz de calificación por estrellas con animaciones (Framer Motion), subida de fotos por drag & drop, tema claro/oscuro y diseño responsivo.
 
 ## Educación
+- **Formación autodidacta en desarrollo de software** — Documentación oficial, cursos en línea y productos reales en producción (Continua)
 - **Bachillerato / Educación Secundaria** — Liceo San Rafael de Alajuela (2015)
 
 ## Idiomas

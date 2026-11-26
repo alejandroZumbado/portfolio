@@ -52,6 +52,7 @@ _Supabase backend_
 - Data validation with Zod, admin panel, and feedback export in JSON format.
 
 ## Education
+- **Self-taught software development** — Official documentation, online courses and real products in production (Ongoing)
 - **High School Diploma** — Liceo San Rafael de Alajuela (2015)
 
 ## Languages

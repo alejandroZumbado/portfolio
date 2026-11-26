@@ -59,6 +59,7 @@ _Desarrollo homebrew en C para Game Boy (toolchain ZGB)_
 - Desarrollo de un juego para hardware real de Game Boy en C, trabajando dentro de las restricciones de memoria y procesamiento del hardware original.
 
 ## Educación
+- **Formación autodidacta en desarrollo de software** — Documentación oficial, cursos en línea y productos reales en producción (Continua)
 - **Bachillerato / Educación Secundaria** — Liceo San Rafael de Alajuela (2015)
 
 ## Idiomas

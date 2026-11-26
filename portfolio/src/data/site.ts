@@ -255,6 +255,21 @@ export const experience: TimelineEntry[] = [
       "Desarrollo y optimización de funcionalidades web con JavaScript y Django sobre sistemas legados.",
     ],
   },
+  // Education: no university degree (self-taught). Don't add degrees he doesn't have.
+  {
+    role: "Formación autodidacta en desarrollo de software",
+    company: "Documentación oficial, cursos en línea y productos reales en producción",
+    dates: "Continua",
+    sub: "Educación",
+    bullets: [],
+  },
+  {
+    role: "Bachillerato / Educación Secundaria",
+    company: "Liceo San Rafael de Alajuela",
+    dates: "2015",
+    sub: "Educación",
+    bullets: [],
+  },
 ];
 
 export interface CvLink {

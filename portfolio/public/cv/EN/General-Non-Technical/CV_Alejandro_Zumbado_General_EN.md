@@ -49,6 +49,7 @@ _A system for collecting customer opinions_
 - Built an app where customers can rate and upload photos of custom 3D-printed figures they bought, with a panel to see all the feedback.
 
 ## Education
+- **Self-taught software development** — Official documentation, online courses and real products in production (Ongoing)
 - **High School Diploma** — Liceo San Rafael de Alajuela (2015)
 
 ## Languages

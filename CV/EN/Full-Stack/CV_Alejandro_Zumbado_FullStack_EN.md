@@ -61,6 +61,7 @@ _Customer feedback collection system_
 - Backend with Supabase, validation with Zod and React Hook Form, animations with Framer Motion.
 
 ## Education
+- **Self-taught software development** — Official documentation, online courses and real products in production (Ongoing)
 - **High School Diploma** — Liceo San Rafael de Alajuela (2015)
 
 ## Languages

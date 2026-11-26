@@ -52,6 +52,7 @@ _Backend con Supabase_
 - Validación de datos con Zod, panel de administración y exportación de feedback en formato JSON.
 
 ## Educación
+- **Formación autodidacta en desarrollo de software** — Documentación oficial, cursos en línea y productos reales en producción (Continua)
 - **Bachillerato / Educación Secundaria** — Liceo San Rafael de Alajuela (2015)
 
 ## Idiomas

@@ -59,6 +59,7 @@ _Homebrew C development for Game Boy (ZGB toolchain)_
 - Built a game for real Game Boy hardware in C, working within the original hardware's memory and processing constraints.
 
 ## Education
+- **Self-taught software development** — Official documentation, online courses and real products in production (Ongoing)
 - **High School Diploma** — Liceo San Rafael de Alajuela (2015)
 
 ## Languages

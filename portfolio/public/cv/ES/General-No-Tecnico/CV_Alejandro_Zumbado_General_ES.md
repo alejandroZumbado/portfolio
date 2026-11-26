@@ -49,6 +49,7 @@ _Sistema para recolectar opiniones de clientes_
 - Creé una aplicación donde los clientes pueden calificar y subir fotos de figuras 3D personalizadas que compraron, con un panel para ver todos los comentarios.
 
 ## Educación
+- **Formación autodidacta en desarrollo de software** — Documentación oficial, cursos en línea y productos reales en producción (Continua)
 - **Bachillerato / Educación Secundaria** — Liceo San Rafael de Alajuela (2015)
 
 ## Idiomas

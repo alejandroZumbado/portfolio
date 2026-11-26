@@ -53,6 +53,7 @@ _Next.js 15 · React 19_
 - Animated star-rating interface (Framer Motion), drag & drop photo upload, light/dark theme, responsive design.
 
 ## Education
+- **Self-taught software development** — Official documentation, online courses and real products in production (Ongoing)
 - **High School Diploma** — Liceo San Rafael de Alajuela (2015)
 
 ## Languages

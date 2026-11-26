@@ -149,6 +149,11 @@
   ],
   "education": [
     {
+      "degree": "Formación autodidacta en desarrollo de software",
+      "place": "Documentación oficial, cursos en línea y productos reales en producción",
+      "date": "Continua"
+    },
+    {
       "degree": "Bachillerato / Educación Secundaria",
       "place": "Liceo San Rafael de Alajuela",
       "date": "2015"

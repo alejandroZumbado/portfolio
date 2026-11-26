@@ -131,6 +131,11 @@
   ],
   "education": [
     {
+      "degree": "Self-taught software development",
+      "place": "Official documentation, online courses and real products in production",
+      "date": "Ongoing"
+    },
+    {
       "degree": "High School Diploma",
       "place": "Liceo San Rafael de Alajuela",
       "date": "2015"
